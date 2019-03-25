@@ -201,6 +201,7 @@ body div{
 	background: url('img/bg.jpg');
 	width: 1365px;
 	height: 665px;
+	margin: 0 auto;
 	justify-content: flex-start;
 	align-items: center;
 }
@@ -446,4 +447,24 @@ body div{
 	font-weight: 300;
 	line-height: 24px;
 	letter-spacing: 0.35px;
+}
+
+/*reviews and form*/
+
+#reviews-and-form {
+	height: 438px;
+	background-color: #f2f2f2;
+}
+
+.reviews-and-form-bg {
+	justify-content: center;
+	width: 1618px;
+	height: 438px;
+	margin: 0 auto;
+	background: url('img/bg2.jpg') center;
+}
+
+.reviews img {
+	width: 83px;
+	height: 83px;
 }
