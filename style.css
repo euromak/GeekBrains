@@ -578,3 +578,103 @@ body div{
 input:visited {
 	text-decoration: none;
 }
+
+/*about company*/
+
+footer {
+	margin-top: 109px;
+}
+
+.footer-top {
+	justify-content: space-between;
+}
+
+.about-company {
+	flex-direction: column;
+	width: 427px;
+}
+
+.about-company__text {
+	margin-top: 38px;
+	color: #898989;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.3px;
+}
+
+.company-list, .information-list, .categories-list {
+	flex-direction: column;
+}
+
+
+.company-list h2, .information-list h2, .categories-list h2 {
+	margin-bottom: 45px;
+	color: #f16d7f;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	letter-spacing: 0.45px;
+}
+
+.company-list ul a, .information-list ul a, .categories-list ul a{ 
+	color: #898989;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+	line-height: 46px;
+}
+
+.footer-bottom {
+	height: 79px;
+	margin-top: 89px;
+	background-color: #e6e6e6;
+}
+
+.vertical-align {
+	align-items: center;
+}
+
+.copywright {
+	width: 570px;
+	justify-content: flex-start;
+	color: #7a7a7a;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 42px;
+	letter-spacing: 0.4px;
+}
+
+.social {
+	width: 570px;
+	justify-content: flex-end;
+}
+
+.social-block {
+	display: flex;
+	justify-content: space-between;
+	width: 191px;
+}
+
+.social-block li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	background-color: #ffffff;
+	color: #b2b2b2;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 42px;
+	letter-spacing: 0.4px;
+}
+
+.social-block li a:hover {
+	background-color: #f16d7f;
+}
+
+.social-block li a:hover i {
+	color: #ffffff;
+}
