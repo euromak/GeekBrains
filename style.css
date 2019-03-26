@@ -198,8 +198,7 @@ body div{
 }
 
 .slider {
-	background: url('img/bg.jpg');
-	width: 1365px;
+	background: url('img/bg.jpg') no-repeat center;
 	height: 665px;
 	margin: 0 auto;
 	justify-content: flex-start;
@@ -209,8 +208,6 @@ body div{
 .text {
 	width: 509px;
 	height: 92px;
-	/*border-left: 12px solid #f16d7f;*/
-	margin-left: 113px;
 	font-size: 22px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -455,16 +452,129 @@ body div{
 	height: 438px;
 	background-color: #f2f2f2;
 }
+.review-and-form-container {
+	width: 1140px;
+	flex-wrap: wrap;
+}
 
 .reviews-and-form-bg {
 	justify-content: center;
-	width: 1618px;
 	height: 438px;
 	margin: 0 auto;
-	background: url('img/bg2.jpg') center;
+	background: url('img/bg2.jpg') no-repeat center;
+}
+
+.reviews {
+	flex: 1;
+	align-items: center;
+	height: 400px;
 }
 
 .reviews img {
 	width: 83px;
 	height: 83px;
+	margin-top: -90px;
+}
+
+.reviews__right-block {
+	flex-direction: column;
+	margin-left: 28px;
+}
+
+.reviews__right-block div:nth-child(1) {
+	width: 386px;
+	height: 68px;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 23px;
+	letter-spacing: 0.4px;
+}
+
+.reviews__right-block p {
+	margin-top: 19px;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	line-height: 16px;
+}
+
+.reviews__right-block p span {
+	color: #f16d7f;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.reviews__right-block__indicators {
+	margin-top: 41px;
+}
+
+.reviews__right-block__indicators span {
+	display: block;
+	width: 38px;
+	height: 4px;
+	background-color: #d6d6d6;
+}
+
+.reviews__right-block__indicators span:nth-child(2) {
+	background-color: #f16d7f;
+	margin: 0 13px;
+}
+
+.form {
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+}
+
+.form div:first-child {
+	font-size: 24px;
+	letter-spacing: 0.6px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.form div:last-child {
+	color: #222224;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.35px;
+}
+
+.form-call-back {
+	display: flex;
+	justify-content: center;
+	height: 46px;
+	margin-top: 35px;
+}
+
+#email {
+	width: 282px;
+	border: 0;
+	border-radius: 23px 0 0 23px;
+	padding-left: 20px;
+	background-color: #e1e1e1;
+	opacity: 0.67;
+	color: #222224;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 54px;
+	letter-spacing: 0.35px;
+}
+
+#submit {
+	width: 104px;
+	border-radius: 0 23px 23px 0;
+	border: 0;
+	background-color: #f16d7f;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.35px;
+}
+
+input:visited {
+	text-decoration: none;
 }

@@ -50,7 +50,7 @@
 		</div>
 	</nav>
 	<section id="slider">
-		<div class="slider">
+		<div class="slider container">
 			<div class="text">
 				<h1><span>THE BRAND</span><br>OF LUXERIOUS <span>FASHION</span></h1>
 			</div>
@@ -212,14 +212,29 @@
 	</section>
 	<section id="reviews-and-form">
 		<div class="reviews-and-form-bg">
-			<div class="container">
+			<div class="container review-and-form-container">
 				<div class="reviews">
-					<img src="img/face.png" alt="review">
-					<div>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
-					<div>Bin Burhan<br>Dhaka, Bd</div>
-					<div></div>
+					<div class="reviews__left-block">
+						<img src="img/face.png" alt="review">
+					</div>
+					<div class="reviews__right-block">
+						<div>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+						<p><span>Bin Burhan</span><br>Dhaka, Bd</p>
+						<div class="reviews__right-block__indicators">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
 				</div>
-				<div class="form"></div>
+				<div class="form">
+					<div>Subscribe</div>
+					<div>FOR OUR NEWLETTER AND PROMOTION</div>
+					<form action="" class="form-call-back">
+						<input type="text" value="Enter Your Email" id="email">
+						<input type="submit" value="Subscribe" id="submit">
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
