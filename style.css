@@ -586,12 +586,10 @@ input:visited {
 
 /*about company*/
 
-footer {
-	margin-top: 109px;
-}
-
 .footer-top {
 	justify-content: space-between;
+	margin-top: 109px;
+	margin-bottom: 89px;
 }
 
 .about-company {
@@ -600,7 +598,7 @@ footer {
 }
 
 .about-company__text {
-	margin-top: 38px;
+	margin-top: 41px;
 	color: #898989;
 	font-size: 14px;
 	font-weight: 300;
@@ -611,7 +609,6 @@ footer {
 .company-list, .information-list, .categories-list {
 	flex-direction: column;
 }
-
 
 .company-list h2, .information-list h2, .categories-list h2 {
 	margin-bottom: 45px;
@@ -632,17 +629,18 @@ footer {
 }
 
 .footer-bottom {
-	height: 79px;
-	margin-top: 89px;
 	background-color: #e6e6e6;
+	display: block;
 }
 
-.vertical-align {
+.footer-bottom__wrapper {
+	height: 79px;
+	justify-content: center;
 	align-items: center;
 }
 
 .copywright {
-	width: 570px;
+	flex: 1;
 	justify-content: flex-start;
 	color: #7a7a7a;
 	font-size: 16px;
@@ -652,7 +650,7 @@ footer {
 }
 
 .social {
-	width: 570px;
+	flex: 1;
 	justify-content: flex-end;
 }
 
