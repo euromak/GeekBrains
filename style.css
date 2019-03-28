@@ -709,3 +709,14 @@ input:visited {
 .social-block li a:hover i {
 	color: #ffffff;
 }
+
+/*products section*/
+
+#heading {
+	height: 148px;
+	background-color: #f8f3f4;
+}
+
+.heading {
+
+}
