@@ -315,6 +315,7 @@ header {
 
 .products-grid-items {
 	margin-top: 40px;
+	position: relative;
 }
 
 .product-name {
@@ -335,17 +336,44 @@ header {
 	text-transform: uppercase;
 }
 
+.product-hover-block {
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 123px;
+	height: 39px;
+	border: 1px solid #ffffff;
+	margin: 94px 0 0 70px;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.product-icon-cart{
+	margin-right: 8px;
+}
+
+.product-hover-block:hover {
+	box-shadow: 0 0 2px white;
+}
+
 .products-grid-items:hover {
 	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 	transition: all 0.2s ease-in-out;
+}
+
+.products-grid-items:hover .product-hover-block{
+	display: flex;
 }
 
 .img-wrap {
 	background-color: black
 }
 
-.products-grid-items:hover img{
-	opacity: 0.5;
+.products-grid-items:hover .product-image{
+	opacity: 0.4;
 	transition: all 0.2s ease-in-out;
 }
 
