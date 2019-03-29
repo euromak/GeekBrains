@@ -28,6 +28,10 @@ body div{
 	display: flex;
 }
 
+*:active, *:focus {
+	outline: none;
+}
+
 /*block styles*/
 
 .container {
@@ -758,3 +762,54 @@ input:visited {
 	font-weight: 700;
 }
 
+/*products section on products page man*/
+
+.sidebar-menu {
+	flex-flow: column;
+	width: 243px;
+	margin-top: 59px;
+}
+
+.sidebar-menu__list {
+	margin-bottom: 30px;
+	color: #6f6e6e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 33px;
+	transition: all 0.3s ease-in-out;
+}
+
+.sidebar-menu__list li {
+	padding-left: 22px;
+}
+
+.sidebar-menu__list li a:hover {
+	color: #ef5b70;
+}
+
+.sidebar-menu__heading {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 243px;
+	height: 37px;
+	padding-left: 11px;
+	margin-bottom: 18px;
+	border-left: 5px solid #ef5b70;
+	border-bottom: 1px solid #ebebeb;
+	color: #6f6e6e;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.sidebar-menu__heading::-webkit-details-marker {
+	position: absolute;
+	right: 5px;
+}
+
+.sidebar-menu__heading-active {
+	color: #ef5b70;
+}
