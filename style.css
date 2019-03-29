@@ -32,6 +32,10 @@ body div{
 	outline: none;
 }
 
+fieldset {
+	border: none;
+}
+
 /*block styles*/
 
 .container {
@@ -812,4 +816,88 @@ input:visited {
 
 .sidebar-menu__heading-active {
 	color: #ef5b70;
+}
+
+/*filters*/
+
+.filters {
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	margin-top: 59px;
+}
+
+.filters__fieldset {
+	width: 177px;
+	height: 74px;
+}
+
+.filters__legend {
+	color: #6f6e6e;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.filters__color-text {
+	color: #6f6e6e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	cursor: pointer;
+}
+
+.filters__fieldset-trend input {
+	display: none;
+}
+
+.filters__fieldset-size {
+	color: #6f6e6e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.filters__fieldset-size label {
+	margin: 0 6px;
+}
+
+.filters__fieldset-size input[type=radio] {
+	width: 13px;
+	height: 13px;
+	border: 1px solid #ebebeb;
+	background-color: #ffffff;
+}
+
+.sorting {
+	align-items: center;
+	width: 846px;
+	height: 50px;
+	margin: 41px auto 0;
+	background-color: #f3f3f3;
+}
+
+.sorting form {
+	display: flex;
+	margin-left: 9px;
+}
+
+.sorting form button {
+	color: #6f6e6e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	width: 66px;
+	border: 1px solid #ebebeb;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.sorting form select {
+	color: #6f6e6e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	border: none;
 }

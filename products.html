@@ -98,11 +98,55 @@
 			</div>
 		</aside>
 		<section>
-			<div class="filters">
-				
+			<div>
+				<form action="#" class="filters">
+					<fieldset class="filters__fieldset filters__fieldset-trend">
+						<legend class="filters__legend">TRENDING NOW</legend>
+						<label for="bohemian filters__color-text"><a href="#">Bohemian  |</a></label>
+						<input type="button" name="bohemian" id="bohemian">
+						<label for="floral filters__color-text"><a href="#">Floral  |</a></label>
+						<input type="button" name="floral" id="floral">
+						<label for="lace filters__color-text"><a href="#">Lace</a></label>
+						<input type="button" name="lace" id="lace">
+						<label for="floral filters__color-text"><a href="#">Floral  |</a></label>
+						<input type="button" name="floral" id="floral">
+						<label for="lace filters__color-text"><a href="#">Lace  |</a></label>
+						<input type="button" name="lace" id="lace">
+						<label for="bohemian filters__color-text"><a href="#">Bohemian</a></label>
+						<input type="button" name="bohemian" id="bohemian">
+					</fieldset>
+					<fieldset class="filters__fieldset filters__fieldset-size">
+						<legend class="filters__legend ">SIZE</legend>
+						<label for="xxs"><input type="checkbox" id="xxs">XXS</label>
+						<label for="xs"><input type="checkbox" id="xs">XS</label>
+						<label for="s"><input type="checkbox" id="s">S</label>
+						<label for="m"><input type="checkbox" id="m">M</label>
+						<label for="l"><input type="checkbox" id="l">L</label>
+						<label for="xl"><input type="checkbox" id="xl">XL</label>
+						<label for="xxl"><input type="checkbox" id="xxl">XXL</label>
+					</fieldset>
+					<fieldset class="filters__fieldset filters__fieldset-price">
+						<legend class="filters__legend">PRICE</legend>
+						<input type="range" id="price" min="0" max="400" value="42" step="1">
+					</fieldset>
+				</form>
 			</div>
 			<div class="sorting">
-				
+				<form action="#" class="sorting__sort">
+					<button>Sort By</button>
+					<select name="sort" id="sortBy">
+						<option value="name">Name</option>
+						<option value="price">Price</option>
+					</select>
+				</form>
+				<form action="#" class="sorting__show">
+					<button>Show</button>
+					<select name="show" id="show">
+						<option value="09">09</option>
+						<option value="12">12</option>
+						<option value="15">12</option>
+					</select>
+				</form>
 			</div>
 			<div class="products">
 				<div class="products-grid">
