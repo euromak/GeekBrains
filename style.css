@@ -41,9 +41,50 @@ body div{
 header {
 	border: 1px solid #ececec;
 }
+
 .header {
 	height: 100px;
 	align-items: center;
+}
+
+/*heading section*/
+
+#heading {
+	background-color: #f8f3f4;
+}
+
+.heading {
+	height: 148px;
+	align-items: center;
+}
+
+.heading-name {
+	width: 176px;
+	color: #f16d7f;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+	flex: 1;
+	justify-content: flex-start;
+}
+
+.breadcrums {
+	flex: 1;
+	justify-content: flex-end;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.breadcrums a {
+	padding: 0 2px;
+}
+
+.breadcrums-active-page {
+	color: #f16d7f;
+	font-weight: 700;
 }
 
 .header__left {
@@ -712,11 +753,5 @@ input:visited {
 
 /*products section*/
 
-#heading {
-	height: 148px;
-	background-color: #f8f3f4;
-}
 
-.heading {
 
-}
