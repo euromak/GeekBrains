@@ -768,6 +768,10 @@ input:visited {
 
 /*products section on products page man*/
 
+.products-grid-section {
+	justify-content: space-between;
+}
+
 .sidebar-menu {
 	flex-flow: column;
 	width: 243px;
@@ -795,7 +799,7 @@ input:visited {
 	position: relative;
 	display: flex;
 	align-items: center;
-	width: 243px;
+	width: 238px;
 	height: 37px;
 	padding-left: 11px;
 	margin-bottom: 18px;
@@ -900,4 +904,68 @@ input:visited {
 	font-weight: 400;
 	line-height: 26px;
 	border: none;
+}
+
+/*products shop*/
+
+.products-shop {
+	width: 846px;
+	flex-direction: column;
+    align-items: center;
+}
+
+.products-grid-shop {
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*products navigation*/
+
+.products-grid-navigation {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-top: 23px;
+}
+
+.products-shop-btn {
+	display: flex;
+	justify-content: center;
+	height: 44px;
+	border-radius: 3px;
+	border: 1px solid #ef5b70;
+	background-color: #ffffff;
+}
+
+.products-shop-btn a {
+	display: flex;
+	width: 150px;
+	justify-content: center;
+	align-items: center;
+	color: #ef5b70;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.pagination {
+	justify-content: space-around;
+	align-items: center;
+	width: 261px;
+	height: 44px;
+	border-radius: 3px;
+	border: 1px solid #ebebeb;
+	background-color: #ffffff;
+}
+
+.pagination a {
+	color: #c4c4c4;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.pagination a:hover {
+	color: #ef5b70;
 }
