@@ -670,6 +670,10 @@ input:visited {
 	line-height: 46px;
 }
 
+.footer-navigation a:hover{
+	color: #ef5b70;
+}
+
 .footer-bottom {
 	background-color: #e6e6e6;
 	display: block;
