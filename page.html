@@ -42,7 +42,7 @@
 			<ul class="menu">
 				<li><a href="index.html" class="menu-header__link">Home</a></li>
 				<li class="menu__active-focus">
-					<a href="#" class="menu-header__link" >Man</a>
+					<a href="products.html" class="menu-header__link" >Man</a>
 					<div class="drop">
 						<div class="drop-flex">
 							<h3 class="drop-flex__heading">Man</h3>
@@ -167,13 +167,27 @@
 				<div class="product-price">$561</div>
 				<hr class="product-line">
 				<form action="" class="single-product-form">
-					<label for="">CHOOSE COLOR</label>
-					<select name="" id=""></select>
-					<label for="">CHOOSE SIZE</label>
-					<select name="" id=""></select>
-					<label for="">QUANTITY</label>
-					<select name="" id=""></select>
-					<button><i class="fa fa-caret-down" aria-hidden="true"></i>Add to Cart</button>
+					<fieldset>
+						<label for="color">CHOOSE COLOR</label>
+						<select name="color" id="color">
+							<option value="red">Red</option>
+							<option value="green">Green</option>
+							<option value="blue">Blue</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="size">CHOOSE SIZE</label>
+						<select name="size" id="size">
+							<option value="xl">Xl</option>
+							<option value="l">L</option>
+							<option value="m">M</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="quantity">QUANTITY</label>
+						<input type="number" name="quantity" id="quantity" min="0" max="10" value="1">
+					</fieldset>
+					<button class="single-product-form-btn"><img src="img/cart1.svg" alt="cart">Add to Cart</button>
 				</form>
 			</div>
 			<div class="product-info__related-products container">
@@ -182,27 +196,31 @@
 					<div class="single-products-grid__item">
 						<a href="page.html">
 							<img src="img/products/related/related_01.jpg" alt="related_product">
-							<div>BLAZE LEGGINGS</div>
-							<div>$52.00</div>
-						</a></div>
+							<div class="single-products-grid__item-name">BLAZE LEGGINGS</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
 					<div class="single-products-grid__item">
 						<a href="page.html">
 							<img src="img/products/related/related_02.jpg" alt="related_product2">
-							<div>ALEXA SWEATER</div>
-							<div>$52.00</div>
-						</a></div>
+							<div class="single-products-grid__item-name">ALEXA SWEATER</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
 					<div class="single-products-grid__item">
 						<a href="page.html">
 							<img src="img/products/related/related_03.jpg" alt="related_product3">
-							<div>AGNES TOP</div>
-							<div>$52.00</div>
-						</a></div>
+							<div class="single-products-grid__item-name">AGNES TOP</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
 					<div class="single-products-grid__item">
 						<a href="page.html">
 							<img src="img/products/related/related_04.jpg" alt="related_product4">
-							<div>SYLVA SWEATER</div>
-							<div>$52.00</div>
-						</a></div>
+							<div class="single-products-grid__item-name">SYLVA SWEATER</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
