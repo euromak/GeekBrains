@@ -1315,3 +1315,11 @@ input:visited {
 .single-products-grid__item:hover .single-products-grid__item-name{
 	color: #f16d7f;
 }
+
+.video-wrap {
+	width: 536px;
+	overflow: hidden;
+}
+
+.video {
+}
