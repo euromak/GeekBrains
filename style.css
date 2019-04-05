@@ -1776,4 +1776,59 @@ input:visited {
   background-color: #f16d7f;
   color: white;
 }
+
+.coupon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.coupon__legend {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.coupon__label {
+  margin-top: 18px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.coupon__input {
+  margin-top: 24px;
+  width: 355px;
+  height: 45px;
+  margin-top: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 18px;
+}
+
+.coupon__btn {
+  margin-top: 25px;
+  width: 118px;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.coupon__btn:hover {
+  background-color: #f16d7f;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

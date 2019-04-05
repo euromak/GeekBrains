@@ -224,16 +224,23 @@
                     <legend class="shipping-adress__legend">Shipping Adress</legend>
                     <select name="city" id="" class="shipping-adress__input">
                         <option value="bangladesh">Moscow</option>
-                        <option value="bangladesh">Novgorod</option>
-                        <option value="bangladesh">Omsk</option>
-                        <option value="bangladesh">Dmitrov</option>
+                        <option value="novgorod">Novgorod</option>
+                        <option value="omsk">Omsk</option>
+                        <option value="dmitrov">Dmitrov</option>
                     </select>
                     <input type="text" placeholder="State" class="shipping-adress__input">
                     <input type="text" placeholder="Postcode/Zip" class="shipping-adress__input">
                     <button class="shipping-adress__btn">get a quote</button>
                 </fieldset>
             </form>
-            <form action=""></form>
+            <form action="">
+                <fieldset class="coupon">
+                    <legend class="coupon__legend">coupon  discount</legend>
+                    <label for="coupon-input" class="coupon__label">Enter your coupon code if you have one</label>
+                    <input type="text" placeholder="State" name="coupon-input" class="coupon__input">
+                    <button class="coupon__btn">Apply coupon</button>
+                </fieldset>
+            </form>
             <div class="cart-total-price"></div>
         </div>
     </section>
