@@ -75,8 +75,7 @@ header
 .logotip p  
 	width: 93px 
 	height: 26px 
-	margin-left: 13px 
-	font-family: "Lato" 
+	margin-left: 13px
 	font-weight: 400 
 	font-size: 24px 
 	line-height: 32px 
@@ -84,7 +83,7 @@ header
  
 
 .logotip p span  
-	color: #f16d7f 
+	color: $pink
 	font-weight: bold 
  
 
@@ -328,7 +327,7 @@ header
 	color: #9f9f9f 
 	font-size: 14px 
 	font-weight: 400 
-	margin-top: 10	px 
+	margin-top: 10px
  
 
 .products-grid  
@@ -368,8 +367,7 @@ header
 	height: 39px 
 	border: 1px solid #ffffff 
 	margin: 94px 0 0 70px 
-	color: #ffffff 
-	font-family: Lato 
+	color: #ffffff
 	font-size: 13px 
 	font-weight: 700 
  
@@ -775,18 +773,18 @@ input:visited
 	font-weight: 300 
 	line-height: 20px 
 	text-transform: uppercase 
- 
 
-.breadcrums a  
-	padding: 0 2px 
- 
+
+.breadcrums a
+	padding: 0 2px
+
 .breadcrums a:hover
-    color: #f16d7f
+	color: #f16d7f
 
-.breadcrums-active-page  
-	color: #f16d7f 
-	font-weight: 700 
- 
+.breadcrums-active-page
+	color: #f16d7f
+	font-weight: 700
+
 
 /*products section on products page man*/
 
@@ -924,23 +922,23 @@ input:visited
 	color: #6f6e6e 
 	font-size: 14px 
 	font-weight: 400 
-	border-left: none !important 
-	border: 1px solid #ebebeb 
+	border-left: none !important
+	border: 1px solid #ebebeb
 	box-sizing: border-box 
  
 
 /*products shop*/
 
-.products-shop  
-	width: 846px 
-	flex-direction: column 
-    align-items: center 
- 
+.products-shop
+	width: 846px
+	flex-direction: column
+	align-items: center
 
-.products-grid-shop  
-	flex-wrap: wrap 
-	justify-content: space-around 
- 
+
+.products-grid-shop
+	flex-wrap: wrap
+	justify-content: space-around
+
 
 /*products navigation*/
 
@@ -1317,269 +1315,266 @@ input:visited
 	transform: scaleX(-1) 
  
 
-.single-products-grid__item:hover .single-products-grid__item-name 
-	color: #f16d7f 
- 
+.single-products-grid__item:hover .single-products-grid__item-name
+	color: #f16d7f
 
-.video-wrap  
-	width: 536px 
-	overflow: hidden 
+
+.video-wrap
+	width: 536px
+	overflow: hidden
 
 /*shopping cart page*/
 
 .cart
-    padding: 70px 0 44px
-    flex-direction: column
+	padding: 70px 0 44px
+	flex-direction: column
 
 .cart__row
-    width: $width
-    border-bottom: 1px solid #eaeaea
-    padding: 20px 0
-    align-items: center
-    
-    &__col-3
-        width: 40%
-
-    &__col-1
-        width: 12%
-        justify-content: flex-end
+	width: $width
+	border-bottom: 1px solid #eaeaea
+	padding: 20px 0
+	align-items: center
+	&__col-3
+		width: 40%
+	&__col-1
+		width: 12%
+		justify-content: flex-end
 
 .cart-heading
-    color: #222222
-    font-size: 13px
-    font-weight: 700
-    line-height: 20px
-    text-transform: uppercase
-    letter-spacing: -0.2px
+	color: #222222
+	font-size: 13px
+	font-weight: 700
+	line-height: 20px
+	text-transform: uppercase
+	letter-spacing: -0.2px
 
 .cart-product-text
-    flex-direction: column
-    padding-left: 21px       
-    
-    &__h3
-        color: #222222
-        font-size: 13px
-        font-weight: 400
-        text-transform: uppercase
-        padding: 10px 0 38px
-    
-    &__p
-        color: #6f6e6e
-        font-size: 13px
-        font-weight: 300
-        line-height: 20px
+	flex-direction: column
+	padding-left: 21px
 
-        &-bold
-            font-weight: 700
-            color: #575757
+	&__h3
+		color: #222222
+		font-size: 13px
+		font-weight: 400
+		text-transform: uppercase
+		padding: 10px 0 38px
+
+	&__p
+		color: #6f6e6e
+		font-size: 13px
+		font-weight: 300
+		line-height: 20px
+
+		&-bold
+			font-weight: 700
+			color: #575757
 
 .cart-item
-    padding-right: 20px
-    color: #656565
-    font-size: 13px
-    font-weight: 400
-    line-height: 20px
+	padding-right: 20px
+	color: #656565
+	font-size: 13px
+	font-weight: 400
+	line-height: 20px
 
 .cart-item-input
-    padding-right: 6px
-    color: #656565
-    font-size: 13px
-    font-weight: 400
-    line-height: 20px
+	padding-right: 6px
+	color: #656565
+	font-size: 13px
+	font-weight: 400
+	line-height: 20px
 
 .fa-times-circle
-    width: 15px
-    height: 15px
-    color: #c0c0c0
-    font-size: 16px
-    font-weight: 400
-    text-transform: uppercase
-    cursor: pointer
+	width: 15px
+	height: 15px
+	color: #c0c0c0
+	font-size: 16px
+	font-weight: 400
+	text-transform: uppercase
+	cursor: pointer
 
 .fa-times-circle:hover 
-    color: $pink
+	color: $pink
 
 .cart-item-number
-    display: flex
-    width: 54px
-    height: 30px
-    border: 1px solid #eaeaea
-    padding-left: 20px
-    margin-left: 20px
+	display: flex
+	width: 54px
+	height: 30px
+	border: 1px solid #eaeaea
+	padding-left: 20px
+	margin-left: 20px
 
 .cart-button
-    justify-content: space-between
+	justify-content: space-between
 
 .cart-button__left
-    justify-content: center
-    align-items: center
-    width: 235px
-    height: 50px
-    border: 1px solid #eaeaea
-    cursor: pointer
-    color: #4a4a4a
-    font-size: 14px
-    font-weight: 700
-    text-transform: uppercase
+	justify-content: center
+	align-items: center
+	width: 235px
+	height: 50px
+	border: 1px solid #eaeaea
+	cursor: pointer
+	color: #4a4a4a
+	font-size: 14px
+	font-weight: 700
+	text-transform: uppercase
 
 .cart-button__right
-    justify-content: center
-    align-items: center
-    width: 235px
-    height: 50px
-    border: 1px solid #eaeaea
-    cursor: pointer
-    color: #4a4a4a
-    font-size: 14px
-    font-weight: 700
-    text-transform: uppercase
+	justify-content: center
+	align-items: center
+	width: 235px
+	height: 50px
+	border: 1px solid #eaeaea
+	cursor: pointer
+	color: #4a4a4a
+	font-size: 14px
+	font-weight: 700
+	text-transform: uppercase
 
 .cart-button__right:hover 
-    background-color: $pink
-    color: white
+	background-color: $pink
+	color: white
 
 .cart-button__left:hover 
-    background-color: $pink
-    color: white
+	background-color: $pink
+	color: white
 
 .cart-forms
-    margin-top: 63px
-    margin-bottom: 79px
-    justify-content: space-between
+	margin-top: 63px
+	margin-bottom: 79px
+	justify-content: space-between
 
 .shipping-adress
-    display: flex
-    flex-direction: column
+	display: flex
+	flex-direction: column
 
-    &__legend
-        color: #222222
-        font-size: 16px
-        font-weight: 700
-        text-transform: uppercase
-    
-    &__input
-        width: 355px
-        height: 45px
-        margin-top: 20px
-        border: 1px solid #eaeaea
-        background-color: #ffffff
-        color: #b1b1b1
-        font-size: 13px
-        font-weight: 300
-        padding-left: 18px
+	&__legend
+		color: #222222
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
 
-    &__btn
-        width: 100px
-        height: 35px
-        margin-top: 23px
-        border: 1px solid #eaeaea
-        background-color: #ffffff
-        color: #4a4a4a
-        font-size: 11px
-        font-weight: 700
-        text-transform: uppercase
-        cursor: pointer
+	&__input
+		width: 355px
+		height: 45px
+		margin-top: 20px
+		border: 1px solid #eaeaea
+		background-color: #ffffff
+		color: #b1b1b1
+		font-size: 13px
+		font-weight: 300
+		padding-left: 18px
 
-    &__btn:hover
-        background-color: $pink
-        color: white
+	&__btn
+		width: 100px
+		height: 35px
+		margin-top: 23px
+		border: 1px solid #eaeaea
+		background-color: #ffffff
+		color: #4a4a4a
+		font-size: 11px
+		font-weight: 700
+		text-transform: uppercase
+		cursor: pointer
+
+	&__btn:hover
+		background-color: $pink
+		color: white
 
 .coupon
-    display: flex
-    flex-direction: column
+	display: flex
+	flex-direction: column
 
-    &__legend
-        color: #222222
-        font-size: 16px
-        font-weight: 700
-        text-transform: uppercase
+	&__legend
+		color: #222222
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
 
-    &__label
-        margin-top: 18px
-        color: #000000
-        font-size: 14px
-        font-weight: 300
+	&__label
+		margin-top: 18px
+		color: #000000
+		font-size: 14px
+		font-weight: 300
 
-    &__input
-        margin-top: 24px
-        width: 355px
-        height: 45px
-        margin-top: 20px
-        border: 1px solid #eaeaea
-        background-color: #ffffff
-        color: #b1b1b1
-        font-size: 13px
-        font-weight: 300
-        padding-left: 18px
+	&__input
+		margin-top: 24px
+		width: 355px
+		height: 45px
+		margin-top: 20px
+		border: 1px solid #eaeaea
+		background-color: #ffffff
+		color: #b1b1b1
+		font-size: 13px
+		font-weight: 300
+		padding-left: 18px
 
-    &__btn
-        margin-top: 25px
-        width: 118px
-        height: 35px
-        border: 1px solid #eaeaea
-        background-color: #ffffff
-        cursor: pointer
-        color: #4a4a4a
-        font-size: 11px
-        font-weight: 700
-        text-transform: uppercase
-    
-    &__btn:hover
-        background-color: $pink
-        color: white
+	&__btn
+		margin-top: 25px
+		width: 118px
+		height: 35px
+		border: 1px solid #eaeaea
+		background-color: #ffffff
+		cursor: pointer
+		color: #4a4a4a
+		font-size: 11px
+		font-weight: 700
+		text-transform: uppercase
+
+	&__btn:hover
+		background-color: $pink
+		color: white
 
 
 .cart-total-price
-    flex-direction: column
-    padding: 42px
-    width: 360px
-    height: 214px
-    background-color: #f5f3f3
+	flex-direction: column
+	padding: 42px
+	width: 360px
+	height: 214px
+	background-color: #f5f3f3
 
-    &__p-up
-        color: #4a4a4a
-        font-size: 11px
-        font-weight: 400
-        text-transform: uppercase
-        text-align: right
+	&__p-up
+		color: #4a4a4a
+		font-size: 11px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: right
 
-        .p-up__span
-            margin-left: 10px
+	.p-up__span
+		margin-left: 10px
 
-    &__p-bottom
-        margin-top: 14px
-        color: #222222
-        font-size: 16px
-        font-weight: 700
-        text-transform: uppercase
-        text-align: right
+	&__p-bottom
+		margin-top: 14px
+		color: #222222
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: right
 
-        .p-bottom__span
-            margin-left: 10px
-            color: $pink
+	.p-bottom__span
+		margin-left: 10px
+		color: $pink
 
-    &__hr
-        height: 1px
-        background-color: #e2e2e2
-        margin-top: 22px
+	&__hr
+		height: 1px
+		background-color: #e2e2e2
+		margin-top: 22px
 
-    &__btn
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 273px
-        height: 50px
-        background-color: $pink
-        color: #ffffff
-        font-size: 16px
-        font-weight: 700
-        text-transform: uppercase
-        margin-top: 17px
-        box-shadow: 2px 2px 2px black
+	&__btn
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 273px
+		height: 50px
+		background-color: $pink
+		color: #ffffff
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		margin-top: 17px
+		box-shadow: 2px 2px 2px black
+
+	&__btn:hover
+		background-color: white
+		color: $pink
+		box-shadow: none
  
-    &__btn:hover
-        background-color: white
-        color: $pink
-        box-shadow: none
-        
-    
