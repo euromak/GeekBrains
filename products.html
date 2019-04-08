@@ -20,7 +20,8 @@
 				<div class="search">
 					<div class="search-btn"><a href="#"><span>B</span>rowse<i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
 					<form action="" class="search-form">
-						<input type="text" name="search" placeholder="Search for item...">
+						<label for="search"></label>
+						<input type="text" name="search" placeholder="Search for item..." id="search">
 						<button><i class="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
@@ -80,7 +81,8 @@
 								<li><a href="#" class="drop-flex__menu__link">Tops</a></li>
 								<li><a href="#" class="drop-flex__menu__link">Sweaters/Knits</a></li>
 								<li><a href="#" class="drop-flex__menu__link">Jackets/Coats</a></li>
-							<a href="#"><img src="img/promo.png" class="promo" alt="promo"></a>
+								<li><a href="#"><img src="img/promo.png" class="promo" alt="promo"></a></li>
+							</ul>
 						</div>
 					</div>
 				</li>
@@ -191,18 +193,18 @@
 				<form action="#" class="filters">
 					<fieldset class="filters__fieldset filters__fieldset-trend">
 						<legend class="filters__legend">TRENDING NOW</legend>
-						<label for="bohemian filters__color-text"><a href="#">Bohemian  |</a></label>
+						<label for="bohemian"><a href="#">Bohemian  |</a></label>
 						<input type="button" name="bohemian" id="bohemian">
-						<label for="floral filters__color-text"><a href="#">Floral  |</a></label>
+						<label for="floral"><a href="#">Floral  |</a></label>
 						<input type="button" name="floral" id="floral">
-						<label for="lace filters__color-text"><a href="#">Lace</a></label>
+						<label for="lace"><a href="#">Lace</a></label>
 						<input type="button" name="lace" id="lace">
-						<label for="floral filters__color-text"><a href="#">Floral  |</a></label>
-						<input type="button" name="floral" id="floral">
-						<label for="lace filters__color-text"><a href="#">Lace  |</a></label>
-						<input type="button" name="lace" id="lace">
-						<label for="bohemian filters__color-text"><a href="#">Bohemian</a></label>
-						<input type="button" name="bohemian" id="bohemian">
+						<label for="floral1"><a href="#">Floral  |</a></label>
+						<input type="button" name="floral1" id="floral1">
+						<label for="lace1"><a href="#">Lace  |</a></label>
+						<input type="button" name="lace1" id="lace1">
+						<label for="bohemian1"><a href="#">Bohemian</a></label>
+						<input type="button" name="bohemian1" id="bohemian1">
 					</fieldset>
 					<fieldset class="filters__fieldset filters__fieldset-size">
 						<legend class="filters__legend ">SIZE</legend>
@@ -216,6 +218,7 @@
 					</fieldset>
 					<fieldset class="filters__fieldset filters__fieldset-price">
 						<legend class="filters__legend">PRICE</legend>
+						<label for="price"></label>
 						<input type="range" id="price" min="0" max="400" value="42" step="1">
 					</fieldset>
 				</form>
@@ -223,6 +226,7 @@
 			<div class="sorting">
 				<form action="#" class="sorting__sort">
 					<button>Sort By</button>
+					<label for="sortBy"></label>
 					<select name="sort" id="sortBy">
 						<option value="name">Name</option>
 						<option value="price">Price</option>
@@ -230,6 +234,7 @@
 				</form>
 				<form action="#" class="sorting__show">
 					<button>Show</button>
+					<label for="show"></label>
 					<select name="show" id="show">
 						<option value="09">09</option>
 						<option value="12">12</option>
@@ -399,6 +404,7 @@
 					<div>Subscribe</div>
 					<div>FOR OUR NEWLETTER AND PROMOTION</div>
 					<form action="" class="form-call-back">
+						<label for="email"></label>
 						<input type="email" value="Enter Your Email" id="email" required>
 						<input type="submit" value="Subscribe" id="submit">
 					</form>
