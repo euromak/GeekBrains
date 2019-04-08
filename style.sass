@@ -922,8 +922,10 @@ input:visited
 	color: #6f6e6e 
 	font-size: 14px 
 	font-weight: 400 
-	border-left: none !important
-	border: 1px solid #ebebeb
+	border-left: none
+	border-right: 1px solid #ebebeb
+	border-top: 1px solid #ebebeb
+	border-bottom: 1px solid #ebebeb
 	box-sizing: border-box 
  
 
@@ -1500,7 +1502,6 @@ input:visited
 		margin-top: 24px
 		width: 355px
 		height: 45px
-		margin-top: 20px
 		border: 1px solid #eaeaea
 		background-color: #ffffff
 		color: #b1b1b1
@@ -1523,7 +1524,6 @@ input:visited
 	&__btn:hover
 		background-color: $pink
 		color: white
-
 
 .cart-total-price
 	flex-direction: column
@@ -1577,4 +1577,42 @@ input:visited
 		background-color: white
 		color: $pink
 		box-shadow: none
- 
+
+.shop-details
+	flex-direction: column
+	padding: 89px 0
+
+	&__blocks
+		color: #222222
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		cursor: pointer
+		padding: 28px 0
+		border-bottom: 1px solid #e8e8e8
+
+	&__blocks:hover .shop-details__summary
+		color: $pink
+
+	&__form
+		width: 50%
+		padding: 35px 0 0 35px
+
+	&__legend
+		color: #222222
+		font-size: 13px
+		font-weight: bold
+		text-transform: uppercase
+
+	&__text
+		padding-top: 10px
+		color: #b3b2b2
+		font-size: 13px
+		font-weight: 400
+		line-height: 20px
+		text-transform: none
+
+	&__radio
+		color: #222222
+		font-size: 12px
+		font-weight: 700
