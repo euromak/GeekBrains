@@ -153,18 +153,31 @@
 				<summary class="shop-details__summary">01. Shipping Adress</summary>
 					<div class="shop-details__set-forms">
 						<form action="" class="shop-details__form">
-							<fieldset class="">
+							<fieldset class="shop-details__fieldset">
 								<legend class="shop-details__legend">Check as a guest or register</legend>
 								<p class="shop-details__text">Register with us for future convenience</p>
-								<label for="shop-details__radio" class="shop-details__radio">checkout as guest</label>
-								<input type="radio" id="shop-details__radio" name="shop-details__radio" class="shop-details__radio-input" value="checkout as guest">
-								<label for="shop-details__radio1" class="shop-details__radio">register</label>
-								<input type="radio" id="shop-details__radio1" name="shop-details__radio" class="shop-details__radio-input" value="checkout as guest">
+								<label for="shop-details__radio" class="shop-details__radio"><input type="radio" id="shop-details__radio" name="shop-details__radio" class="shop-details__radio-input" value="checkout as guest">checkout as guest</label>
+								<label for="shop-details__radio1" class="shop-details__radio"><input type="radio" id="shop-details__radio1" name="shop-details__radio" class="shop-details__radio-input" value="checkout as guest" checked>register</label>
+								<p class="shop-details__legend">register and save time!</p>
+								<p class="shop-details__text">Register with us for future convenience</p>
+								<p class="shop-details__text shop-details__text-up"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Fast and easy checkout</p>
+								<p class="shop-details__text"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Easy access to your order history and status</p>
+								<button class="shop-details__btn">Continue</button>
 							</fieldset>
 						</form>
 						<form action="" class="shop-details__form">
-							<fieldset>
+							<fieldset class="shop-details__fieldset">
 								<legend class="shop-details__legend">Already registed?</legend>
+								<p class="shop-details__text">Please log in below</p>
+								<label for="emailAdress" class="shop-details__label-right">EMAIL ADDRESS <span class="shop-details__red-star">*</span></label>
+								<input type="email" id="emailAdress" class="shop-details__input-right" required>
+								<label for="password" class="shop-details__label-right">PASSWORD <span class="shop-details__red-star">*</span></label>
+								<input type="password" id="password" class="shop-details__input-right" required>
+								<p class="shop-details__text-red">* Required Fileds</p>
+								<div class="shop-details__btn-text">
+									<button class="shop-details__btn-login">Log in</button>
+									<a href="#" class="shop-details__a">Forgot Password ?</a>
+								</div>
 							</fieldset>
 						</form>
 					</div>
