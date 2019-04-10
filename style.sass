@@ -1739,6 +1739,8 @@ input:visited
 		flex-direction: column
 		opacity: 0
 		transition: all 10s
+		animation: form 4s 1
+		animation-fill-mode: forwards
 
 	&__phone
 		color: #fff
@@ -1800,6 +1802,12 @@ input:visited
 			transform: rotate(-360deg)
 		100%
 			transform: rotate(0deg)
+
+	@keyframes form
+		0%
+			opacity: 0
+		100%
+			opacity: 1
 
 
 
