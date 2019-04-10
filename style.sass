@@ -1732,6 +1732,7 @@ input:visited
 		border-radius: 25px 25px 25px 25px
 		box-shadow: 0 0 3px black
 		transition: transform 0.9s
+		animation: round 1s 1
 
 	&__form
 		display: none
@@ -1793,6 +1794,12 @@ input:visited
 		100%
 			width: 300px
 			height: 200px
+
+	@keyframes round
+		0%
+			transform: rotate(-360deg)
+		100%
+			transform: rotate(0deg)
 
 
 
