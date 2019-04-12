@@ -1155,6 +1155,9 @@ input:visited {
       font-weight: 700;
       color: #575757; }
 
+.cart-product-a:hover {
+  color: #f16d7f; }
+
 .cart-item {
   padding-right: 20px;
   color: #656565;
