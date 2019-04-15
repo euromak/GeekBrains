@@ -156,8 +156,102 @@ header
 
 .cart-icon  
 	width: 32px 
-	height: 29px 
- 
+	height: 29px
+	position: relative
+
+	&__modal
+		position: absolute
+		display: none
+		flex-direction: column
+		justify-content: center
+		width: 262px
+		height: 440px
+		top: 38px
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08)
+		border: 1px solid #e9e9e9
+		border-radius: 5px
+		background-color: #ffffff
+		z-index: 1000
+
+	&__modal::before
+		content: ""
+		position: absolute
+		top: -7px
+		left: 10px
+		width: 12px
+		height: 12px
+		background-color: #fff
+		border-left: 1px solid #e9e9e9
+		border-top: 1px solid #e9e9e9
+		transform: rotate(45deg)
+
+	.cart-icon:hover &__modal
+		display: flex
+
+	&__items
+		width: 225px
+		margin: 0 auto
+		padding: 16px 0
+		border-bottom: 1px solid #ededed
+
+	&__items-info
+		flex-direction: column
+		padding-left: 14px
+
+	&__items-info-row
+		padding-top: 10px
+
+	&__items-name
+		color: #222222
+		font-size: 12px
+		font-weight: 700
+		text-transform: uppercase
+
+	&__close
+		height: 12px !important
+		margin-left: 70px
+
+	&__items-a:hover
+		color: $pink
+
+	&__items-price
+		color: $pink
+		font-size: 12px
+		font-weight: 700
+		text-transform: uppercase
+
+	&__price
+		justify-content: space-between
+		margin: 19px auto 16px
+		width: 225px
+		color: #222222
+		font-size: 16px
+		font-weight: 700
+
+	&__btn
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 225px
+		height: 50px
+		border: 1px solid #eaeaea
+		background-color: #ffffff
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		margin: 8px auto 10px
+
+	&__btn-active
+		border: 1px solid $pink
+		color: $pink
+
+	&__btn:hover
+		color: #ffffff
+		background-color: $pink
+
+	&__btn-active:hover
+		color: #ffffff
+		background-color: $pink
 
 .button-header-right  
 	width: 130px 
@@ -1033,8 +1127,7 @@ input:visited
 .menu li  
 	position: relative 
  
-
-.drop  
+.drop
 	display: none 
 	border-radius: 5px 
 	background-color: #ffffff 

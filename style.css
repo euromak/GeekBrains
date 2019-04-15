@@ -123,7 +123,87 @@ header {
 
 .cart-icon {
   width: 32px;
-  height: 29px; }
+  height: 29px;
+  position: relative; }
+  .cart-icon__modal {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 262px;
+    height: 440px;
+    top: 38px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    background-color: #ffffff;
+    z-index: 1000; }
+  .cart-icon__modal::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-left: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    transform: rotate(45deg); }
+  .cart-icon:hover .cart-icon__modal {
+    display: flex; }
+  .cart-icon__items {
+    width: 225px;
+    margin: 0 auto;
+    padding: 16px 0;
+    border-bottom: 1px solid #ededed; }
+  .cart-icon__items-info {
+    flex-direction: column;
+    padding-left: 14px; }
+  .cart-icon__items-info-row {
+    padding-top: 10px; }
+  .cart-icon__items-name {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .cart-icon__close {
+    height: 12px !important;
+    margin-left: 70px; }
+  .cart-icon__items-a:hover {
+    color: #f16d7f; }
+  .cart-icon__items-price {
+    color: #f16d7f;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .cart-icon__price {
+    justify-content: space-between;
+    margin: 19px auto 16px;
+    width: 225px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700; }
+  .cart-icon__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 8px auto 10px; }
+  .cart-icon__btn-active {
+    border: 1px solid #f16d7f;
+    color: #f16d7f; }
+  .cart-icon__btn:hover {
+    color: #ffffff;
+    background-color: #f16d7f; }
+  .cart-icon__btn-active:hover {
+    color: #ffffff;
+    background-color: #f16d7f; }
 
 .button-header-right {
   width: 130px;
