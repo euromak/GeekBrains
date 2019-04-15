@@ -501,7 +501,13 @@ header
 	justify-content: center 
 	margin-top: 60px 
 	background-color: #f16d7f 
- 
+
+	&__a:hover
+		background-color: #ffffff
+		color: $pink
+		outline: 2px solid $pink
+		transition: all .3s
+
 
 .products-btn a  
 	text-align: center 
@@ -1929,14 +1935,19 @@ input:visited
 	.cart-icon, .button-header-right
 		display: none
 
-	.header__right
-
 	.hamburger__i
 		display: flex !important
 		cursor: pointer
 
 	.search
 		display: none
+
+	.banner__block-left
+		display: none
+
+	.banner
+		justify-content: center
+		margin-bottom: 0
 
 @media screen and (max-width: 576px)
 

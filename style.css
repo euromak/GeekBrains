@@ -413,6 +413,11 @@ header {
   justify-content: center;
   margin-top: 60px;
   background-color: #f16d7f; }
+  .products-btn__a:hover {
+    background-color: #ffffff;
+    color: #f16d7f;
+    outline: 2px solid #f16d7f;
+    transition: all 0.3s; }
 
 .products-btn a {
   text-align: center;
@@ -1648,7 +1653,14 @@ input:visited {
     cursor: pointer; }
 
   .search {
-    display: none; } }
+    display: none; }
+
+  .banner__block-left {
+    display: none; }
+
+  .banner {
+    justify-content: center;
+    margin-bottom: 0; } }
 @media screen and (max-width: 576px) {
   .menu {
     display: none; }
