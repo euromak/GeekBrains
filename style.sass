@@ -7,1989 +7,1807 @@ $width: 1140px
 
 /*reset styles*/
 
-*  
-	margin: 0 
-	padding: 0 
-	box-sizing: border-box 
- 
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
 
-a  
-	text-decoration: none 
-	color: #222222 
- 
+a
+  text-decoration: none
+  color: #222222
 
-ul,ol  
-	list-style-type: none 
- 
+ul, ol
+  list-style-type: none
 
-body  
-	font-family: 'Lato', sans-serif 
-	color: #222222 
- 
+body
+  font-family: 'Lato', sans-serif
+  color: #222222
 
-body div 
-	display: flex 
- 
+body div
+  display: flex
 
-*:active, *:focus  
-	outline: none 
- 
+*:active, *:focus
+  outline: none
 
-fieldset  
-	border: none 
- 
+fieldset
+  border: none
 
 /*block styles*/
 
-.container  
-	max-width: 1140px 
-	margin: 0 auto 
-	flex-direction: row 
- 
+.container
+  max-width: 1140px
+  margin: 0 auto
+  flex-direction: row
 
 /*header*/
 
-header  
-	border: 1px solid #ececec 
- 
+header
+  border: 1px solid #ececec
 
-.header  
-	height: 100px
-	justify-content: space-around
-	align-items: center 
- 
+.header
+  height: 100px
+  justify-content: space-around
+  align-items: center
 
-.header__left  
-	align-items: center 	
-	width: 70% 
- 
+.header__left
+  align-items: center
+  width: 70%
 
-.logotip  
-	align-items: center 
-	text-decoration: none 
- 
+.logotip
+  align-items: center
+  text-decoration: none
 
-.logotip a  
-	align-items: center 
- 
+.logotip a
+  align-items: center
 
-.logotip p  
-	width: 93px 
-	height: 26px 
-	margin-left: 13px
-	font-weight: 400 
-	font-size: 24px 
-	line-height: 32px 
-	letter-spacing: 0.68px 
- 
+.logotip p
+  width: 93px
+  height: 26px
+  margin-left: 13px
+  font-weight: 400
+  font-size: 24px
+  line-height: 32px
+  letter-spacing: 0.68px
 
-.logotip p span  
-	color: $pink
-	font-weight: bold 
- 
+.logotip p span
+  color: $pink
+  font-weight: bold
 
-.header__left div  
-	align-items: center 
- 
+.header__left div
+  align-items: center
 
-.search  
-	margin-left: 50px 
- 
+.search
+  margin-left: 50px
 
-.search-btn  
-	width: 87px 
-	height: 38px 
-	border-radius: 3px 0 0 3px 
-	border: 1px solid #e6e6e6 
-	background-color: #cdcdcc 
-	background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%) 
-	justify-content: center 
-	box-sizing: border-box 
- 
+.search-btn
+  width: 87px
+  height: 38px
+  border-radius: 3px 0 0 3px
+  border: 1px solid #e6e6e6
+  background-color: #cdcdcc
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+  justify-content: center
+  box-sizing: border-box
 
-.search-btn a  
-	font-size: 14px 
-	font-weight: 300 
-	line-height: 32px 
- 
+.search-btn a
+  font-size: 14px
+  font-weight: 300
+  line-height: 32px
 
-.search-btn a span  
-	letter-spacing: 0.35px 
- 
+.search-btn a span
+  letter-spacing: 0.35px
+  background-color: #cdcdcc
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+  justify-content: center
+  box-sizing: border-box
 
-.search-btn a i  
-	width: 9px 
-	color: #838383 
-	margin-left: 8px 
- 
+.search-btn a i
+  width: 9px
+  color: #838383
+  margin-left: 8px
 
-.search-form  
-	display: flex 
- 
+.search-form
+  display: flex
 
-.search-form input  
-	width: 317px 
-	height: 38px 
-	padding: 0 16px 
-	border: 1px solid #e6e6e6 
-	background-color: #ffffff 
-	color: #a4a4a4 
-	font-size: 14px 
-	font-weight: 300 
-	line-height: 32px 
- 
+.search-form input
+  width: 317px
+  height: 38px
+  padding: 0 16px
+  border: 1px solid #e6e6e6
+  background-color: #ffffff
+  color: #a4a4a4
+  font-size: 14px
+  font-weight: 300
+  line-height: 32px
 
-.search-form button  
-	width: 36px 
-	height: 38px 
-	border-radius: 0 3px 3px 0 
-	border: 1px solid #e6e6e6 
-	background-color: #ffffff 
-	cursor: pointer 
-	color: #838383 
- 
+.search-form button
+  width: 36px
+  height: 38px
+  border-radius: 0 3px 3px 0
+  border: 1px solid #e6e6e6
+  background-color: #ffffff
+  cursor: pointer
+  color: #838383
 
-.header__right  
-	justify-content: flex-end 
-	align-items: center 
-	width: 20%
- 
+.header__right
+  justify-content: flex-end
+  align-items: center
+  width: 20%
 
-.cart-icon  
-	width: 32px 
-	height: 29px
-	position: relative
+.cart-icon
+  width: 32px
+  height: 29px
+  position: relative
 
-	&__modal
-		position: absolute
-		display: none
-		flex-direction: column
-		justify-content: center
-		width: 262px
-		height: 440px
-		top: 38px
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08)
-		border: 1px solid #e9e9e9
-		border-radius: 5px
-		background-color: #ffffff
-		z-index: 1000
+  &__modal
+    position: absolute
+    display: none
+    flex-direction: column
+    justify-content: center
+    width: 262px
+    height: 440px
+    top: 38px
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08)
+    border: 1px solid #e9e9e9
+    border-radius: 5px
+    background-color: #ffffff
+    z-index: 1000
 
-	&__modal::before
-		content: ""
-		position: absolute
-		top: -7px
-		left: 10px
-		width: 12px
-		height: 12px
-		background-color: #fff
-		border-left: 1px solid #e9e9e9
-		border-top: 1px solid #e9e9e9
-		transform: rotate(45deg)
+  &__modal::before
+    content: ""
+    position: absolute
+    top: -7px
+    left: 10px
+    width: 12px
+    height: 12px
+    background-color: #fff
+    border-left: 1px solid #e9e9e9
+    border-top: 1px solid #e9e9e9
+    transform: rotate(45deg)
 
-	.cart-icon:hover &__modal
-		display: flex
+  .cart-icon:hover &__modal
+    display: flex
 
-	&__items
-		width: 225px
-		margin: 0 auto
-		padding: 16px 0
-		border-bottom: 1px solid #ededed
+  &__items
+    width: 225px
+    margin: 0 auto
+    padding: 16px 0
+    border-bottom: 1px solid #ededed
 
-	&__items-info
-		flex-direction: column
-		padding-left: 14px
+  &__items-info
+    flex-direction: column
+    padding-left: 14px
 
-	&__items-info-row
-		padding-top: 10px
+  &__items-info-row
+    padding-top: 10px
 
-	&__items-name
-		color: #222222
-		font-size: 12px
-		font-weight: 700
-		text-transform: uppercase
+  &__items-name
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
 
-	&__close
-		height: 12px !important
-		margin-left: 70px
+  &__close
+    height: 12px !important
+    margin-left: 70px
 
-	&__items-a:hover
-		color: $pink
+  &__items-a:hover
+    color: $pink
 
-	&__items-price
-		color: $pink
-		font-size: 12px
-		font-weight: 700
-		text-transform: uppercase
+  &__items-price
+    color: $pink
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
 
-	&__price
-		justify-content: space-between
-		margin: 19px auto 16px
-		width: 225px
-		color: #222222
-		font-size: 16px
-		font-weight: 700
+  &__price
+    justify-content: space-between
+    margin: 19px auto 16px
+    width: 225px
+    color: #222222
+    font-size: 16px
+    font-weight: 700
 
-	&__btn
-		display: flex
-		justify-content: center
-		align-items: center
-		width: 225px
-		height: 50px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		font-size: 14px
-		font-weight: 700
-		text-transform: uppercase
-		margin: 8px auto 10px
+  &__btn
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 225px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin: 8px auto 10px
 
-	&__btn-active
-		border: 1px solid $pink
-		color: $pink
+  &__btn-active
+    border: 1px solid $pink
+    color: $pink
 
-	&__btn:hover
-		color: #ffffff
-		background-color: $pink
+  &__btn:hover
+    color: #ffffff
+    background-color: $pink
 
-	&__btn-active:hover
-		color: #ffffff
-		background-color: $pink
+  &__btn-active:hover
+    color: #ffffff
+    background-color: $pink
 
-.button-header-right  
-	width: 130px 
-	height: 38px 
-	background-color: #f16d7f 
-	margin-left: 26px 
-	display: flex 
-	justify-content: center 
-	align-items: center 
-	cursor: pointer 
-	color: #ffffff 
-	font-size: 15px 
-	font-weight: 400 
-	line-height: 32px 
-	letter-spacing: 0.38px 
+.button-header-right
+  width: 130px
+  height: 38px
+  background-color: #f16d7f
+  margin-left: 26px
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  line-height: 32px
+  letter-spacing: 0.38px
 
 .hamburger__i
-	width: 38px
-	font-size: 30px !important
-	color: #cdcdcc
-	display: none !important
+  width: 38px
+  font-size: 30px !important
+  color: #cdcdcc
+  display: none !important
 
 .hamburger__i:hover
-	color: $pink
-	transition: all 0.3s
+  color: $pink
+  transition: all 0.3s
 
-.button-header-right i  
-	margin-left: 8px 
- 
+.button-header-right i
+  margin-left: 8px
 
-.button-header-right:hover  
-	background-color: white 
-	color: #f16d7f 
-	border: 2px solid #f16d7f 
- 
+.button-header-right:hover
+  background-color: white
+  color: #f16d7f
+  border: 2px solid #f16d7f
 
 /*navigation*/
 
-.nav  
-	justify-content: center 
-	height: 51px 
+.nav
+  justify-content: center
+  height: 51px
 
- 
-.menu  
-	display: flex 
-	justify-content: space-around
-	width: 680px 
-	color: #222222 
-	font-size: 14px 
-	font-weight: 700 
-	line-height: 26px 
-	text-transform: uppercase 
- 
+.menu
+  display: flex
+  justify-content: space-around
+  width: 680px
+  color: #222222
+  font-size: 14px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
 
-.menu-header__link  
-	display: flex 
-	align-items: center 
-	height: 51px
+.menu-header__link
+  display: flex
+  align-items: center
+  height: 51px
 
-.menu-header__link:hover  
-	color: #ef5b70 
- 
+.menu-header__link:hover
+  color: #ef5b70
 
-.menu__active-focus  
-	border-bottom: 3px solid #ef5b70 
- 
+.menu__active-focus
+  border-bottom: 3px solid #ef5b70
 
 /*slider section*/
 
-#slider  
-	background-color: #e8e8e8 
- 
+#slider
+  background-color: #e8e8e8
 
-.slider  
-	background: url('img/bg.jpg') no-repeat center 
-	height: 665px 
-	margin: 0 auto 
-	justify-content: flex-start 
-	align-items: center 
- 
+.slider
+  background: url('img/bg.jpg') no-repeat center
+  height: 665px
+  margin: 0 auto
+  justify-content: flex-start
+  align-items: center
 
-.text  
-	width: 509px 
-	height: 92px 
-	font-size: 22px 
-	font-weight: 400 
-	text-transform: uppercase 
-	letter-spacing: 1.5px 
- 
+.text
+  width: 509px
+  height: 92px
+  font-size: 22px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 1.5px
 
-.text::before  
-	content: "" 
-	border-left: 12px solid #f16d7f 
-	margin-right: 12px 
+.text::before
+  content: ""
+  border-left: 12px solid #f16d7f
+  margin-right: 12px
 
- 
+.text h1 span:first-child
+  display: inline-block
+  font-size: 60px
+  font-weight: 600
+  letter-spacing: 1.5px
+  margin-top: -14px
 
-.text h1 span:first-child  
-	display: inline-block 
-	font-size: 60px 
-	font-weight: 600 
-	letter-spacing: 1.5px 
-	margin-top: -14px 	
- 
-
-.text h1 span:last-child  
-	color: #f16d7f 
-	letter-spacing: 1px 
- 
+.text h1 span:last-child
+  color: #f16d7f
+  letter-spacing: 1px
 
 /*categories section*/
 
-.categories  
-	margin-top: 78px 
-	justify-content: center 
+.categories
+  margin-top: 78px
+  justify-content: center
 
-	&__group-left
-		flex-direction: column
-		margin-right: 20px
+  &__group-left
+    flex-direction: column
+    margin-right: 20px
 
-	&__group-right
-		flex-direction: column
+  &__group-right
+    flex-direction: column
 
-	&__group-right div, &__group-left div
-		margin-top: 20px
- 
+  &__group-right div, &__group-left div
+    margin-top: 20px
 
-.categories-item  
-	position: relative 
-	text-transform: uppercase 			
- 
+.categories-item
+  position: relative
+  text-transform: uppercase
 
-.categories-item-text  
-	position: absolute 
-	top: 26px 
-	background-color: #ffffff 
-	color: #222222 
-	font-size: 18px 
-	font-weight: bold 
-	padding: 16px 18px 
-	letter-spacing: 0.45px 
+.categories-item-text
+  position: absolute
+  top: 26px
+  background-color: #ffffff
+  color: #222222
+  font-size: 18px
+  font-weight: bold
+  padding: 16px 18px
+  letter-spacing: 0.45px
 
- 
+.categories-item-text span
+  color: #f16d7f
+  font-size: 30px
+  letter-spacing: 0.75px
 
-.categories-item-text span 
-	color: #f16d7f 
-	font-size: 30px 
-	letter-spacing: 0.75px 
- 
-
-.categories-item img 
-	width: 100% 
-	height: 100% 
- 
+.categories-item img
+  width: 100%
+  height: 100%
 
 /*products section*/
 
-.products  
-	margin-top: 100px 
-	flex-direction: column 
-	align-items: center 
- 
+.products
+  margin-top: 100px
+  flex-direction: column
+  align-items: center
 
-.products h2  
-	font-size: 30px 
-	font-weight: 700 
-	letter-spacing: 0.75px 
- 
+.products h2
+  font-size: 30px
+  font-weight: 700
+  letter-spacing: 0.75px
 
-.products p 
-	color: #9f9f9f 
-	font-size: 14px 
-	font-weight: 400 
-	margin-top: 10px
- 
+.products p
+  color: #9f9f9f
+  font-size: 14px
+  font-weight: 400
+  margin-top: 10px
 
-.products-grid  
-	flex-wrap: wrap 
-	justify-content: space-around
- 
+.products-grid
+  flex-wrap: wrap
+  justify-content: space-around
 
-.products-grid-items  
-	margin-top: 40px 
-	position: relative 
- 
+.products-grid-items
+  margin-top: 40px
+  position: relative
 
-.product-name  
-	margin-top: 20px 
-	margin-left: 14px 
-	font-size: 13px 
-	font-weight: bold 
-	text-transform: uppercase 
- 
+.product-name
+  margin-top: 20px
+  margin-left: 14px
+  font-size: 13px
+  font-weight: bold
+  text-transform: uppercase
 
-.price  
-	margin-top: 14px 
-	margin-left: 14px 
-	margin-bottom: 21px 
-	color: #f16d7f 
-	font-size: 16px 
-	font-weight: 700 
-	text-transform: uppercase 
- 
+.price
+  margin-top: 14px
+  margin-left: 14px
+  margin-bottom: 21px
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
 
-.product-hover-block  
-	position: absolute 
-	display: none 
-	justify-content: center 
-	align-items: center 
-	width: 123px 
-	height: 39px 
-	border: 1px solid #ffffff 
-	margin: 94px 0 0 70px 
-	color: #ffffff
-	font-size: 13px 
-	font-weight: 700 
- 
+.product-hover-block
+  position: absolute
+  display: none
+  justify-content: center
+  align-items: center
+  width: 123px
+  height: 39px
+  border: 1px solid #ffffff
+  margin: 94px 0 0 70px
+  color: #ffffff
+  font-size: 13px
+  font-weight: 700
 
-.product-icon-cart 
-	margin-right: 8px 
- 
+.product-icon-cart
+  margin-right: 8px
 
-.product-hover-block:hover  
-	box-shadow: 0 0 2px white 
- 
+.product-hover-block:hover
+  box-shadow: 0 0 2px white
 
-.products-grid-items:hover  
-	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16) 
-	transition: all 0.2s ease-in-out 
- 
+.products-grid-items:hover
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+  transition: all 0.2s ease-in-out
 
-.products-grid-items:hover .product-hover-block 
-	display: flex 
- 
+.products-grid-items:hover .product-hover-block
+  display: flex
 
-.img-wrap  
-	background-color: black
- 
+.img-wrap
+  background-color: black
 
-.products-grid-items:hover .product-image 
-	opacity: 0.4 
-	transition: all 0.2s ease-in-out 
- 
+.products-grid-items:hover .product-image
+  opacity: 0.4
+  transition: all 0.2s ease-in-out
 
-.products-btn  
-	justify-content: center 
-	margin-top: 60px 
-	background-color: #f16d7f 
+.products-btn
+  justify-content: center
+  margin-top: 60px
+  background-color: #f16d7f
 
-	&__a:hover
-		background-color: #ffffff
-		color: $pink
-		outline: 2px solid $pink
-		transition: all .3s
+  &__a:hover
+    background-color: #ffffff
+    color: $pink
+    outline: 2px solid $pink
+    transition: all .3s
 
+.products-btn a
+  text-align: center
+  width: 212px
+  height: 48px
+  color: #ffffff
+  font-size: 16px
+  font-weight: 700
+  line-height: 50px
+  letter-spacing: 0.4px
 
-.products-btn a  
-	text-align: center 
-	width: 212px 
-	height: 48px 
-	color: #ffffff 
-	font-size: 16px 
-	font-weight: 700 
-	line-height: 50px 
-	letter-spacing: 0.4px 
- 
-
-.products-btn i  
-	margin-left: 9px 
- 
+.products-btn i
+  margin-left: 9px
 
 /*banner section*/
 
-.banner  
-	height: 529px 
-	margin-top: 113px 
-	margin-bottom: 97px 
-	background-color: #222224 
- 
+.banner
+  height: 529px
+  margin-top: 113px
+  margin-bottom: 97px
+  background-color: #222224
 
-.banner__block-left  
-	width: 767px 
-	height: 529px 
-	padding-top: 146px 
-	background: url('img/bg-banner.jpg') 
-	flex-direction: column 
- 
+.banner__block-left
+  width: 767px
+  height: 529px
+  padding-top: 146px
+  background: url('img/bg-banner.jpg')
+  flex-direction: column
 
-.banner__block-left div  
-	margin-left: 39px 
-	color: #ffffff 
-	font-size: 54px 
-	font-weight: 500 
-	text-transform: uppercase 
-	letter-spacing: 1.5px 
- 
+.banner__block-left div
+  margin-left: 39px
+  color: #ffffff
+  font-size: 54px
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 1.5px
 
-.banner__block-left span  
-	color: #f16d7f 
-	letter-spacing: 1.5px 
-	font-weight: 700 
-	padding-left: 10px 
- 
+.banner__block-left span
+  color: #f16d7f
+  letter-spacing: 1.5px
+  font-weight: 700
+  padding-left: 10px
 
-.banner__block-left div:last-child  
-	font-size: 32px 
-	letter-spacing: 0.9px 
- 
+.banner__block-left div:last-child
+  font-size: 32px
+  letter-spacing: 0.9px
 
-.banner__block-right  
-	flex-direction: column 
-	color: #fbfbfb 
- 
-.banner__block-right__items  
-	margin-top: 48px 
-	margin-left: 36px 
- 
+.banner__block-right
+  flex-direction: column
+  color: #fbfbfb
 
-.banner__block-right__text  
-	flex-direction: column 
-	margin-left: 34px 
- 
+.banner__block-right__items
+  margin-top: 48px
+  margin-left: 36px
 
-.banner__block-right img:nth-child(1)  
-	width:  45px 
-	height: 40px 
- 
+.banner__block-right__text
+  flex-direction: column
+  margin-left: 34px
 
-.banner__block-right img:nth-child(2)  
-	width: 45px 
- 
+.banner__block-right img:nth-child(1)
+  width: 45px
+  height: 40px
 
-.banner__block-right img:nth-child(3)  
-	width:  45px 	
- 
+.banner__block-right img:nth-child(2)
+  width: 45px
 
-.banner__block-right__text h2  
-	font-size: 20px 
-	font-weight: 700 
-	letter-spacing: 0.5px 
- 
+.banner__block-right img:nth-child(3)
+  width: 45px
 
-.banner__block-right__text p  
-	width: 219px 
-	height: 58px 
-	margin-top: 12px 
-	font-size: 14px 
-	font-weight: 300 
-	line-height: 24px 
-	letter-spacing: 0.35px 
- 
+.banner__block-right__text h2
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+
+.banner__block-right__text p
+  width: 219px
+  height: 58px
+  margin-top: 12px
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  letter-spacing: 0.35px
 
 /*reviews and form*/
 
 #reviews-and-form
-	background-color: #f2f2f2 
- 
-.review-and-form-container  
-	width: 1140px 
-	flex-wrap: wrap 
- 
+  background-color: #f2f2f2
 
-.reviews-and-form-bg  
-	justify-content: center 
-	height: 438px 
-	margin: 0 auto 
-	background: url('img/bg2.jpg') no-repeat center 
- 
+.review-and-form-container
+  width: 1140px
+  flex-wrap: wrap
 
-.reviews  
-	flex: 1 
-	align-items: center 
-	height: 400px 
- 
+.reviews-and-form-bg
+  justify-content: center
+  height: 438px
+  margin: 0 auto
+  background: url('img/bg2.jpg') no-repeat center
 
-.reviews img  
-	width: 83px 
-	height: 83px 
-	margin-top: -90px 
- 
+.reviews
+  flex: 1
+  align-items: center
+  height: 400px
 
-.reviews__right-block  
-	flex-direction: column 
-	margin-left: 28px 
- 
+.reviews img
+  width: 83px
+  height: 83px
+  margin-top: -90px
 
-.reviews__right-block div:nth-child(1)  
-	width: 386px 
-	height: 68px 
-	font-size: 16px 
-	font-style: italic 
-	line-height: 23px 
-	letter-spacing: 0.4px 
- 
+.reviews__right-block
+  flex-direction: column
+  margin-left: 28px
 
-.reviews__right-block p  
-	margin-top: 19px 
-	font-size: 12px 
-	font-weight: 500 
-	letter-spacing: 0.3px 
-	line-height: 16px 
- 
+.reviews__right-block div:nth-child(1)
+  width: 386px
+  height: 68px
+  font-size: 16px
+  font-style: italic
+  line-height: 23px
+  letter-spacing: 0.4px
 
-.reviews__right-block p span  
-	color: #f16d7f 
-	font-size: 16px 
-	font-weight: 700 
- 
+.reviews__right-block p
+  margin-top: 19px
+  font-size: 12px
+  font-weight: 500
+  letter-spacing: 0.3px
+  line-height: 16px
 
-.reviews__right-block__indicators  
-	margin-top: 41px 
- 
+.reviews__right-block p span
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
 
-.reviews__right-block__indicators span  
-	display: block 
-	width: 38px 
-	height: 4px 
-	background-color: #d6d6d6 
- 
+.reviews__right-block__indicators
+  margin-top: 41px
 
-.reviews__right-block__indicators span:nth-child(2)  
-	background-color: #f16d7f 
-	margin: 0 13px 
- 
+.reviews__right-block__indicators span
+  display: block
+  width: 38px
+  height: 4px
+  background-color: #d6d6d6
 
-.form  
-	flex: 1 
-	flex-direction: column 
-	align-items: center 
-	justify-content: center 
-	height: 400px 
- 
+.reviews__right-block__indicators span:nth-child(2)
+  background-color: #f16d7f
+  margin: 0 13px
 
-.form div:first-child  
-	font-size: 24px 
-	letter-spacing: 0.6px 
-	line-height: 30px 
-	text-transform: uppercase 
- 
+.form
+  flex: 1
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 400px
 
-.form div:last-child  
-	color: #222224 
-	font-size: 14px 
-	font-weight: 400 
-	letter-spacing: 0.35px 
- 
+.form div:first-child
+  font-size: 24px
+  letter-spacing: 0.6px
+  line-height: 30px
+  text-transform: uppercase
 
-.form-call-back  
-	display: flex 
-	justify-content: center 
-	height: 46px 
-	margin-top: 35px 
- 
+.form div:last-child
+  color: #222224
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.35px
 
-#email  
-	width: 282px 
-	border: 0 
-	border-radius: 23px 0 0 23px 
-	padding: 0 30px 
-	background-color: #e1e1e1 
-	opacity: 0.67 
-	color: #222224 
-	font-size: 14px 
-	font-weight: 400 
-	line-height: 54px 
-	letter-spacing: 0.35px 
- 
+.form-call-back
+  display: flex
+  justify-content: center
+  height: 46px
+  margin-top: 35px
 
-#submit  
-	width: 104px 
-	border-radius: 0 23px 23px 0 
-	border: 0 
-	background-color: #f16d7f 
-	cursor: pointer 
-	color: #ffffff 
-	font-size: 14px 
-	font-weight: bold 
-	letter-spacing: 0.35px 
- 
+#email
+  width: 282px
+  border: 0
+  border-radius: 23px 0 0 23px
+  padding: 0 30px
+  background-color: #e1e1e1
+  opacity: 0.67
+  color: #222224
+  font-size: 14px
+  font-weight: 400
+  line-height: 54px
+  letter-spacing: 0.35px
 
-#submit:hover  
-	background-color: white 
-	color: #f16d7f 
-	font-weight: bold 
-	border: 2px solid #f16d7f 
- 
+#submit
+  width: 104px
+  border-radius: 0 23px 23px 0
+  border: 0
+  background-color: #f16d7f
+  cursor: pointer
+  color: #ffffff
+  font-size: 14px
+  font-weight: bold
+  letter-spacing: 0.35px
 
-input:visited  
-	text-decoration: none 
- 
+#submit:hover
+  background-color: white
+  color: #f16d7f
+  font-weight: bold
+  border: 2px solid #f16d7f
+
+input:visited
+  text-decoration: none
 
 /*about company*/
 
-.footer-top  
-	justify-content: space-between 
-	margin-top: 109px 
-	margin-bottom: 89px 
- 
+.footer-top
+  justify-content: space-between
+  margin-top: 109px
+  margin-bottom: 89px
 
-.about-company  
-	flex-direction: column 
-	width: 427px 
- 
+.about-company
+  flex-direction: column
+  width: 427px
 
-.about-company__text  
-	margin-top: 41px 
-	color: #898989 
-	font-size: 14px 
-	font-weight: 300 
-	line-height: 24px 
-	letter-spacing: 0.3px 
- 
+.about-company__text
+  margin-top: 41px
+  color: #898989
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  letter-spacing: 0.3px
 
-.company-list, .information-list, .categories-list  
-	flex-direction: column 
- 
+.company-list, .information-list, .categories-list
+  flex-direction: column
 
-.company-list h2, .information-list h2, .categories-list h2  
-	margin-bottom: 45px 
-	color: #f16d7f 
-	font-size: 18px 
-	font-weight: 700 
-	line-height: 26px 
-	text-transform: uppercase 
-	letter-spacing: 0.45px 
- 
+.company-list h2, .information-list h2, .categories-list h2
+  margin-bottom: 45px
+  color: #f16d7f
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+  letter-spacing: 0.45px
 
-.company-list ul a, .information-list ul a, .categories-list ul a  
-	color: #898989 
-	font-size: 16px 
-	font-weight: 400 
-	letter-spacing: 0.4px 
-	line-height: 46px 
- 
+.company-list ul a, .information-list ul a, .categories-list ul a
+  color: #898989
+  font-size: 16px
+  font-weight: 400
+  letter-spacing: 0.4px
+  line-height: 46px
 
-.footer-navigation a:hover 
-	color: #ef5b70 
- 
+.footer-navigation a:hover
+  color: #ef5b70
 
-.footer-bottom  
-	background-color: #e6e6e6 
-	display: block 
- 
+.footer-bottom
+  background-color: #e6e6e6
+  display: block
 
-.footer-bottom__wrapper  
-	height: 79px 
-	justify-content: center 
-	align-items: center 
- 
+.footer-bottom__wrapper
+  height: 79px
+  justify-content: center
+  align-items: center
 
-.copywright  
-	flex: 1 
-	justify-content: flex-start 
-	color: #7a7a7a 
-	font-size: 16px 
-	font-weight: 400 
-	line-height: 42px 
-	letter-spacing: 0.4px 
- 
+.copywright
+  flex: 1
+  justify-content: flex-start
+  color: #7a7a7a
+  font-size: 16px
+  font-weight: 400
+  line-height: 42px
+  letter-spacing: 0.4px
 
-.social  
-	flex: 1 
-	justify-content: flex-end 
- 
+.social
+  flex: 1
+  justify-content: flex-end
 
-.social-block  
-	display: flex 
-	justify-content: space-between 
-	width: 191px 
- 
+.social-block
+  display: flex
+  justify-content: space-between
+  width: 191px
 
-.social-block li a 
-	display: flex 
-	justify-content: center 
-	align-items: center 
-	width: 32px 
-	height: 32px 
-	background-color: #ffffff 
-	color: #b2b2b2 
-	font-size: 16px 
-	font-weight: 400 
-	line-height: 42px 
-	letter-spacing: 0.4px 
- 
+.social-block li a
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  color: #b2b2b2
+  font-size: 16px
+  font-weight: 400
+  line-height: 42px
+  letter-spacing: 0.4px
 
-.social-block li a:hover  
-	background-color: #f16d7f 
- 
+.social-block li a:hover
+  background-color: #f16d7f
 
-.social-block li a:hover i  
-	color: #ffffff 
- 
+.social-block li a:hover i
+  color: #ffffff
 
 /*products page*/
 
 /*heading section*/
 
-#heading  
-	background-color: #f8f3f4 
- 
+#heading
+  background-color: #f8f3f4
 
-.heading  
-	height: 148px 
-	align-items: center 
- 
+.heading
+  height: 148px
+  align-items: center
 
-.heading-name  
-	width: 176px 
-	color: #f16d7f 
-	font-size: 24px 
-	font-weight: 400 
-	line-height: 20px 
-	text-transform: uppercase 
-	flex: 1 
-	justify-content: flex-start 
- 
+.heading-name
+  width: 176px
+  color: #f16d7f
+  font-size: 24px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+  flex: 1
+  justify-content: flex-start
 
-.breadcrums  
-	flex: 1 
-	justify-content: flex-end 
-	font-size: 14px 
-	font-weight: 300 
-	line-height: 20px 
-	text-transform: uppercase 
-
+.breadcrums
+  flex: 1
+  justify-content: flex-end
+  font-size: 14px
+  font-weight: 300
+  line-height: 20px
+  text-transform: uppercase
 
 .breadcrums a
-	padding: 0 2px
+  padding: 0 2px
 
 .breadcrums a:hover
-	color: #f16d7f
+  color: #f16d7f
 
 .breadcrums-active-page
-	color: #f16d7f
-	font-weight: 700
-
+  color: #f16d7f
+  font-weight: 700
 
 /*products section on products page man*/
 
-.products-grid-section  
-	justify-content: space-between 
- 
+.products-grid-section
+  justify-content: space-between
 
-.sidebar-menu  
-	flex-flow: column 
-	width: 243px 
-	margin-top: 59px 
- 
+.sidebar-menu
+  flex-flow: column
+  width: 243px
+  margin-top: 59px
 
-.sidebar-menu__list  
-	margin-bottom: 30px 
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 400 
-	line-height: 33px 
-	transition: all 0.3s ease-in-out 
- 
+.sidebar-menu__list
+  margin-bottom: 30px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 33px
+  transition: all 0.3s ease-in-out
 
-.sidebar-menu__list li  
-	padding-left: 22px 
- 
+.sidebar-menu__list li
+  padding-left: 22px
 
-.sidebar-menu__list li a:hover  
-	color: #ef5b70 
- 
+.sidebar-menu__list li a:hover
+  color: #ef5b70
 
-.sidebar-menu__heading  
-	position: relative 
-	display: flex 
-	align-items: center 
-	width: 238px 
-	height: 37px 
-	padding-left: 11px 
-	margin-bottom: 18px 
-	border-left: 5px solid #ef5b70 
-	border-bottom: 1px solid #ebebeb 
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 700 
-	line-height: 20px 
-	text-transform: uppercase 
-	cursor: pointer 
- 
+.sidebar-menu__heading
+  position: relative
+  display: flex
+  align-items: center
+  width: 238px
+  height: 37px
+  padding-left: 11px
+  margin-bottom: 18px
+  border-left: 5px solid #ef5b70
+  border-bottom: 1px solid #ebebeb
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  cursor: pointer
 
-.sidebar-menu__heading::-webkit-details-marker  
-	position: absolute 
-	right: 5px 
- 
+.sidebar-menu__heading::-webkit-details-marker
+  position: absolute
+  right: 5px
 
-.sidebar-menu__heading-active  
-	color: #ef5b70 
- 
+.sidebar-menu__heading-active
+  color: #ef5b70
 
 /*filters*/
 
-.filters  
-	display: flex 
-	flex: 1 
-	justify-content: space-around 
-	margin-top: 59px 
- 
+.filters
+  display: flex
+  flex: 1
+  justify-content: space-around
+  margin-top: 59px
 
-.filters__fieldset  
-	width: 177px 
-	height: 74px 
- 
+.filters__fieldset
+  width: 177px
+  height: 74px
 
-.filters__legend  
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 700 
-	line-height: 20px 
-	margin-bottom: 10px 
- 
+.filters__legend
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  margin-bottom: 10px
 
-.filters__color-text  
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 400 
-	line-height: 26px 
-	cursor: pointer 
- 
+.filters__color-text
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  cursor: pointer
 
-.filters__fieldset-trend input  
-	display: none 
- 
+.filters__fieldset-trend input
+  display: none
 
-.filters__fieldset-size  
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 400 
-	line-height: 20px 
- 
+.filters__fieldset-size
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
 
-.filters__fieldset-size label  
-	margin: 0 6px 
- 
+.filters__fieldset-size label
+  margin: 0 6px
 
-.filters__fieldset-size input[type=radio]  
-	width: 13px 
-	height: 13px 
-	border: 1px solid #ebebeb 
-	background-color: #ffffff 
- 
+.filters__fieldset-size input[type=radio]
+  width: 13px
+  height: 13px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
 
-.sorting  
-	align-items: center 
-	width: 846px 
-	height: 50px 
-	margin: 41px auto 0 
-	background-color: #f3f3f3 
- 
+.sorting
+  align-items: center
+  width: 846px
+  height: 50px
+  margin: 41px auto 0
+  background-color: #f3f3f3
 
-.sorting form  
-	display: flex 
-	margin-left: 9px 
- 
+.sorting form
+  display: flex
+  margin-left: 9px
 
-.sorting form button  
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 400 
-	width: 66px 
-	border: 1px solid #ebebeb 
-	background-color: #ffffff 
-	cursor: pointer 
-	box-sizing: border-box 
- 
+.sorting form button
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  width: 66px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  cursor: pointer
+  box-sizing: border-box
 
-.sorting form select  
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 400 
-	border-left: none
-	border-right: 1px solid #ebebeb
-	border-top: 1px solid #ebebeb
-	border-bottom: 1px solid #ebebeb
-	box-sizing: border-box 
- 
+.sorting form select
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  border-left: none
+  border-right: 1px solid #ebebeb
+  border-top: 1px solid #ebebeb
+  border-bottom: 1px solid #ebebeb
+  box-sizing: border-box
 
 /*products shop*/
 
 .products-shop
-	width: 846px
-	flex-direction: column
-	align-items: center
-
+  width: 846px
+  flex-direction: column
+  align-items: center
 
 .products-grid-shop
-	flex-wrap: wrap
-	justify-content: space-around
-
+  flex-wrap: wrap
+  justify-content: space-around
 
 /*products navigation*/
 
-.products-grid-navigation  
-	flex-direction: row 
-	justify-content: space-between 
-	align-items: center 
-	width: 100% 
-	margin-top: 23px 
- 
+.products-grid-navigation
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  margin-top: 23px
 
-.products-shop-btn  
-	display: flex 
-	justify-content: center 
-	height: 44px 
-	border-radius: 3px 
-	border: 1px solid #ef5b70 
-	background-color: #ffffff 
- 
+.products-shop-btn
+  display: flex
+  justify-content: center
+  height: 44px
+  border-radius: 3px
+  border: 1px solid #ef5b70
+  background-color: #ffffff
 
-.products-shop-btn a  
-	display: flex 
-	width: 150px 
-	justify-content: center 
-	align-items: center 
-	color: #ef5b70 
-	font-size: 16px 
-	font-weight: bold 
-	line-height: 26px 
- 
+.products-shop-btn a
+  display: flex
+  width: 150px
+  justify-content: center
+  align-items: center
+  color: #ef5b70
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
 
-.pagination  
-	justify-content: space-around 
-	align-items: center 
-	width: 261px 
-	height: 44px 
-	border-radius: 3px 
-	border: 1px solid #ebebeb 
-	background-color: #ffffff 
- 
+.pagination
+  justify-content: space-around
+  align-items: center
+  width: 261px
+  height: 44px
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
 
-.pagination a  
-	color: #c4c4c4 
-	font-size: 16px 
-	font-weight: bold 
-	line-height: 26px 
- 
+.pagination a
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
 
-.pagination a:hover  
-	color: #ef5b70 
- 
+.pagination a:hover
+  color: #ef5b70
 
 /*CTA*/
 
-#cta  
-	background-color: #222224 
- 
+#cta
+  background-color: #222224
 
-.cta  
-	height: 341px 
-	margin-top: 110px 
-	color: #fbfbfb 
-	justify-content: space-between 
-	align-items: center 
- 
+.cta
+  height: 341px
+  margin-top: 110px
+  color: #fbfbfb
+  justify-content: space-between
+  align-items: center
 
-.cta div  
-	flex-direction: column 
- 
+.cta div
+  flex-direction: column
 
-.cta__heading  
-	margin: 32px 0 17px 
-	color: #fbfbfb 
-	font-size: 20px 
-	font-weight: 700 
-	letter-spacing: 0.5px 
-	text-align: center 
- 
+.cta__heading
+  margin: 32px 0 17px
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+  text-align: center
 
-.cta__text  
-	color: #fbfbfb 
-	font-size: 14px 
-	font-weight: 300 
-	line-height: 23.95px 
-	letter-spacing: 0.35px 
-	width: 310px 
-	text-align: center 
- 
+.cta__text
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+  line-height: 23.95px
+  letter-spacing: 0.35px
+  width: 310px
+  text-align: center
 
-.menu li  
-	position: relative 
- 
+.menu li
+  position: relative
+
 .drop
-	display: none 
-	border-radius: 5px 
-	background-color: #ffffff 
-	position: absolute 
-	top: 48px 
-	border: 1px solid #e9e9e9 
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08) 
-	z-index: 100 
- 
+  display: none
+  border-radius: 5px
+  background-color: #ffffff
+  position: absolute
+  top: 48px
+  border: 1px solid #e9e9e9
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08)
+  z-index: 100
 
-.drop::before  
-	content: "" 
-	position: absolute 
-	top: -7px 
-	left: 16px
-	width: 12px 
-	height: 12px 
-	background-color: #fff 
-	border-left: 1px solid #e9e9e9 
-	border-top: 1px solid #e9e9e9 
-	transform: rotate(45deg) 
- 
+.drop::before
+  content: ""
+  position: absolute
+  top: -7px
+  left: 16px
+  width: 12px
+  height: 12px
+  background-color: #fff
+  border-left: 1px solid #e9e9e9
+  border-top: 1px solid #e9e9e9
+  transform: rotate(45deg)
 
-.drop-flex  
-	flex-direction: column 
-	justify-content: space-between 
-	margin: 10px 25px 20px 
- 
+.drop-flex
+  flex-direction: column
+  justify-content: space-between
+  margin: 10px 25px 20px
 
-.drop-flex__heading  
-	width: 200px 
-	margin-bottom: 5px 
-	color: #232323 
-	font-size: 14px 
-	font-weight: 400 
-	line-height: 32px 
-	border-bottom: 1px solid #e8e8e8 
-	text-transform: uppercase 
-	letter-spacing: 0.35px 
- 
+.drop-flex__heading
+  width: 200px
+  margin-bottom: 5px
+  color: #232323
+  font-size: 14px
+  font-weight: 400
+  line-height: 32px
+  border-bottom: 1px solid #e8e8e8
+  text-transform: uppercase
+  letter-spacing: 0.35px
 
-.drop-flex__menu__link  
-	color: #646464 
-	font-size: 14px 
-	font-weight: 400 
-	letter-spacing: 0.35px 
-	text-transform: none 
-	line-height: 28px 
- 
+.drop-flex__menu__link
+  color: #646464
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.35px
+  text-transform: none
+  line-height: 28px
 
-.drop-flex__menu__link:hover  
-	color: #ef5b70 
- 
+.drop-flex__menu__link:hover
+  color: #ef5b70
 
-.menu li:hover .drop 
-	display: flex 
- 
+.menu li:hover .drop
+  display: flex
 
-.promo  
-	margin-top: 10px 
- 
+.promo
+  margin-top: 10px
 
-.promo:hover  
-	outline: 2px solid #ef5b70 
- 
+.promo:hover
+  outline: 2px solid #ef5b70
 
 /*single page*/
 
-.product-info  
-	flex-direction: column 
- 
+.product-info
+  flex-direction: column
 
-.product-info__foto  
-	position: relative 
-	border: 1px solid #eaeaea 
-	background-color: #f7f7f7 
-	justify-content: center 
-	padding-bottom: 50px 
- 
+.product-info__foto
+  position: relative
+  border: 1px solid #eaeaea
+  background-color: #f7f7f7
+  justify-content: center
+  padding-bottom: 50px
 
-.product-info__foto__nav__left  
-	justify-content: center 
-	align-items: center 
-	position: absolute 
-	top: 320px 
-	left: 0 
-	width: 47px 
-	height: 47px 
-	background-color: #dfdfdf 
-	cursor: pointer 
-	color: #ffffff 
- 
+.product-info__foto__nav__left
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 320px
+  left: 0
+  width: 47px
+  height: 47px
+  background-color: #dfdfdf
+  cursor: pointer
+  color: #ffffff
 
-.product-info__foto__nav__right  
-	justify-content: center 
-	align-items: center 
-	position: absolute 
-	top: 320px 
-	right: 0 
-	width: 47px 
-	height: 47px 
-	background-color: #dfdfdf 
-	cursor: pointer 
-	color: #ffffff 
- 
+.product-info__foto__nav__right
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 320px
+  right: 0
+  width: 47px
+  height: 47px
+  background-color: #dfdfdf
+  cursor: pointer
+  color: #ffffff
 
-.product-info__foto__nav__left:hover, .product-info__foto__nav__right:hover   
-	color: #ef5b70 
- 
+.product-info__foto__nav__left:hover, .product-info__foto__nav__right:hover
+  color: #ef5b70
 
-.product-info__description  
-	flex-direction: column 
-	justify-content: flex-start 
-	width: 1140px 
-	height: 730px 
-	align-items: center 
-	border: 1px solid #eaeaea 
-	margin-top: -70px 
-	z-index: 100 
-	background-color: #ffffff 
- 
+.product-info__description
+  flex-direction: column
+  justify-content: flex-start
+  width: 1140px
+  height: 730px
+  align-items: center
+  border: 1px solid #eaeaea
+  margin-top: -70px
+  z-index: 100
+  background-color: #ffffff
 
-.product-category  
-	position: relative 
-	color: #f16d7f 
-	font-size: 14px 
-	font-weight: 700 
-	line-height: 24px 
-	text-transform: uppercase 
-	margin-top: 73px 
-	padding-bottom: 10px 
-	border-bottom: 1px solid #eaeaea 
- 
+.product-category
+  position: relative
+  color: #f16d7f
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  margin-top: 73px
+  padding-bottom: 10px
+  border-bottom: 1px solid #eaeaea
 
-.product-category::after  
-	content: "" 
-	position: absolute 
-	bottom: 0 
-	border-bottom: 3px solid  #ef5b70 
-	left: 42px 
-	width: 63px 
-	height: 3px 
- 
+.product-category::after
+  content: ""
+  position: absolute
+  bottom: 0
+  border-bottom: 3px solid #ef5b70
+  left: 42px
+  width: 63px
+  height: 3px
 
-.product-heading  
-	color: #4d4d4d 
-	font-size: 18px 
-	font-weight: bold 
-	line-height: 24px 
-	text-transform: uppercase 
-	margin-top: 10px 
- 
+.product-heading
+  color: #4d4d4d
+  font-size: 18px
+  font-weight: bold
+  line-height: 24px
+  text-transform: uppercase
+  margin-top: 10px
 
-.product-description  
-	width: 620px 
-	margin: 60px auto 20px 
-	color: #5e5e5e 
-	font-size: 14px 
-	font-weight: 300 
-	line-height: 24px 
-	text-align: center 
- 
+.product-description
+  width: 620px
+  margin: 60px auto 20px
+  color: #5e5e5e
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  text-align: center
 
-.product-param  
-	width: 32% 
-	justify-content: space-between 
- 
+.product-param
+  width: 32%
+  justify-content: space-between
 
-.product-param__text  
-	color: #b9b9b9 
-	font-size: 16px 
-	font-weight: 700 
-	margin-right: 5px 
- 
+.product-param__text
+  color: #b9b9b9
+  font-size: 16px
+  font-weight: 700
+  margin-right: 5px
 
-.product-price  
-	margin: 34px auto 
-	color: #ef5b70 
-	font-size: 24px 
-	font-weight: 700 
-	line-height: 24px 
- 
+.product-price
+  margin: 34px auto
+  color: #ef5b70
+  font-size: 24px
+  font-weight: 700
+  line-height: 24px
 
-.product-line  
-	width: 642px 
-	height: 1px 
-	border: 1px solid #eaeaea 
-	background-color: #ef5b70 
- 
+.product-line
+  width: 642px
+  height: 1px
+  border: 1px solid #eaeaea
+  background-color: #ef5b70
 
-.single-product-form  
-	display: flex 
-	flex-flow: row wrap 
-	justify-content: space-between 
-	align-items: center 
-	width: 537px 
-	margin-top: 63px 
- 
+.single-product-form
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: center
+  width: 537px
+  margin-top: 63px
 
-.single-product-form fieldset  
-	display: flex 
-	flex-direction: column 
- 
+.single-product-form fieldset
+  display: flex
+  flex-direction: column
 
-.single-product-form label  
-	color: #2f2f2f 
-	font-size: 14px 
-	font-weight: 700 
-	line-height: 24px 
- 
+.single-product-form label
+  color: #2f2f2f
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
 
-.single-product-form select, .single-product-form input  
-	color: #bcbcbc 
-	font-size: 13px 
-	font-weight: 400 
-	width: 144px 
-	padding: 5px 
- 
+.single-product-form select, .single-product-form input
+  color: #bcbcbc
+  font-size: 13px
+  font-weight: 400
+  width: 144px
+  padding: 5px
 
-.single-product-form-btn  
-	display: flex 
-	justify-content: center 
-	align-items: center 
-	width: 537px 
-	height: 55px 
-	margin-top: 28px 
-	border: 1px solid #ef5b70 
-	background-color: #ffffff 
-	color: #ef5b70 
-	font-size: 16px 
-	font-weight: 700 
-	cursor: pointer 
- 
+.single-product-form-btn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 537px
+  height: 55px
+  margin-top: 28px
+  border: 1px solid #ef5b70
+  background-color: #ffffff
+  color: #ef5b70
+  font-size: 16px
+  font-weight: 700
+  cursor: pointer
 
-.single-product-form-btn img  
-	margin-right: 10px 
- 
+.single-product-form-btn img
+  margin-right: 10px
 
-.single-product-form-btn:hover  
-	box-shadow: 0 0 3px #ef5b70 
-	transition: all 0.2s 
- 
+.single-product-form-btn:hover
+  box-shadow: 0 0 3px #ef5b70
+  transition: all 0.2s
 
-.product-info__related-products  
-	flex-direction: column 
-	align-items: center 
-	padding-top: 110px 
-	padding-bottom: 100px 
- 
+.product-info__related-products
+  flex-direction: column
+  align-items: center
+  padding-top: 110px
+  padding-bottom: 100px
 
-.product-info__related-products h2  
-	color: #4d4d4d 
-	font-size: 24px 
-	font-weight: bold 
-	text-transform: uppercase 
- 
+.product-info__related-products h2
+  color: #4d4d4d
+  font-size: 24px
+  font-weight: bold
+  text-transform: uppercase
 
-.single-products-grid  
-	width: 1140px 
-	margin-top: 72px 
-	justify-content: space-between  
- 
+.single-products-grid
+  width: 1140px
+  margin-top: 72px
+  justify-content: space-between
 
-.single-products-grid__item-name  
-	padding: 19px 0 16px 14px 
-	color: #6f6e6e 
-	font-size: 14px 
-	font-weight: 700 
-	text-transform: uppercase 
- 
+.single-products-grid__item-name
+  padding: 19px 0 16px 14px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
 
-.single-products-grid__item-price  
-	color: #f16d7f 
-	font-size: 16px 
-	font-weight: 700 
-	padding-left: 14px 
- 
+.single-products-grid__item-price
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  padding-left: 14px
 
-.single-products-grid__item:hover .single-products-grid__item-image  
-	transform: scaleX(-1) 
- 
+.single-products-grid__item:hover .single-products-grid__item-image
+  transform: scaleX(-1)
 
 .single-products-grid__item:hover .single-products-grid__item-name
-	color: #f16d7f
-
+  color: #f16d7f
 
 .video-wrap
-	width: 536px
-	overflow: hidden
+  width: 536px
+  overflow: hidden
 
 /*shopping cart page*/
 
 .cart
-	padding: 70px 0 44px
-	flex-direction: column
+  padding: 70px 0 44px
+  flex-direction: column
 
 .cart__row
-	width: $width
-	border-bottom: 1px solid #eaeaea
-	padding: 20px 0
-	align-items: center
-	&__col-3
-		width: 40%
-	&__col-1
-		width: 12%
-		justify-content: flex-end
-
+  width: $width
+  border-bottom: 1px solid #eaeaea
+  padding: 20px 0
+  align-items: center
+  &__col-3
+    width: 40%
+  &__col-1
+    width: 12%
+    justify-content: flex-end
 
 .cart-heading
-	color: #222222
-	font-size: 13px
-	font-weight: 700
-	line-height: 20px
-	text-transform: uppercase
-	letter-spacing: -0.2px
+  color: #222222
+  font-size: 13px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  letter-spacing: -0.2px
 
 .cart-product-text
-	flex-direction: column
-	padding-left: 21px
+  flex-direction: column
+  padding-left: 21px
 
-	&__h3
-		color: #222222
-		font-size: 13px
-		font-weight: 400
-		text-transform: uppercase
-		padding: 10px 0 38px
+  &__h3
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    padding: 10px 0 38px
 
-	&__p
-		color: #6f6e6e
-		font-size: 13px
-		font-weight: 300
-		line-height: 20px
+  &__p
+    color: #6f6e6e
+    font-size: 13px
+    font-weight: 300
+    line-height: 20px
 
-		&-bold
-			font-weight: 700
-			color: #575757
+    &-bold
+      font-weight: 700
+      color: #575757
 
 .cart-product-a:hover
-	color: $pink
+  color: $pink
 
 .cart-item
-	padding-right: 20px
-	color: #656565
-	font-size: 13px
-	font-weight: 400
-	line-height: 20px
+  padding-right: 20px
+  color: #656565
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
 
 .cart-item-input
-	padding-right: 6px
-	color: #656565
-	font-size: 13px
-	font-weight: 400
-	line-height: 20px
+  padding-right: 6px
+  color: #656565
+  font-size: 13px
+  font-weight: 400
+  line-height: 20px
 
 .fa-times-circle
-	width: 15px
-	height: 15px
-	color: #c0c0c0
-	font-size: 16px
-	font-weight: 400
-	text-transform: uppercase
-	cursor: pointer
+  width: 15px
+  height: 15px
+  color: #c0c0c0
+  font-size: 16px
+  font-weight: 400
+  text-transform: uppercase
+  cursor: pointer
 
-.fa-times-circle:hover 
-	color: $pink
+.fa-times-circle:hover
+  color: $pink
 
 .cart-item-number
-	display: flex
-	width: 54px
-	height: 30px
-	border: 1px solid #eaeaea
-	padding-left: 20px
-	margin-left: 20px
+  display: flex
+  width: 54px
+  height: 30px
+  border: 1px solid #eaeaea
+  padding-left: 20px
+  margin-left: 20px
 
 .cart-button
-	justify-content: space-between
+  justify-content: space-between
 
 .cart-button__left
-	justify-content: center
-	align-items: center
-	width: 235px
-	height: 50px
-	border: 1px solid #eaeaea
-	cursor: pointer
-	color: #4a4a4a
-	font-size: 14px
-	font-weight: 700
-	text-transform: uppercase
+  justify-content: center
+  align-items: center
+  width: 235px
+  height: 50px
+  border: 1px solid #eaeaea
+  cursor: pointer
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
 
 .cart-button__right
-	justify-content: center
-	align-items: center
-	width: 235px
-	height: 50px
-	border: 1px solid #eaeaea
-	cursor: pointer
-	color: #4a4a4a
-	font-size: 14px
-	font-weight: 700
-	text-transform: uppercase
+  justify-content: center
+  align-items: center
+  width: 235px
+  height: 50px
+  border: 1px solid #eaeaea
+  cursor: pointer
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
 
-.cart-button__right:hover 
-	background-color: $pink
-	color: white
+.cart-button__right:hover
+  background-color: $pink
+  color: white
 
-.cart-button__left:hover 
-	background-color: $pink
-	color: white
+.cart-button__left:hover
+  background-color: $pink
+  color: white
 
 .cart-forms
-	margin-top: 63px
-	margin-bottom: 79px
-	justify-content: space-between
+  margin-top: 63px
+  margin-bottom: 79px
+  justify-content: space-between
 
 .shipping-adress
-	display: flex
-	flex-direction: column
+  display: flex
+  flex-direction: column
 
-	&__legend
-		color: #222222
-		font-size: 16px
-		font-weight: 700
-		text-transform: uppercase
+  &__legend
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
 
-	&__input
-		width: 355px
-		height: 45px
-		margin-top: 20px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		color: #b1b1b1
-		font-size: 13px
-		font-weight: 300
-		padding-left: 18px
+  &__input
+    width: 355px
+    height: 45px
+    margin-top: 20px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    padding-left: 18px
 
-	&__btn
-		width: 100px
-		height: 35px
-		margin-top: 23px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		color: #4a4a4a
-		font-size: 11px
-		font-weight: 700
-		text-transform: uppercase
-		cursor: pointer
+  &__btn
+    width: 100px
+    height: 35px
+    margin-top: 23px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
 
-	&__btn:hover
-		background-color: $pink
-		color: white
-
+  &__btn:hover
+    background-color: $pink
+    color: white
 
 .coupon
-	display: flex
-	flex-direction: column
+  display: flex
+  flex-direction: column
 
-	&__legend
-		color: #222222
-		font-size: 16px
-		font-weight: 700
-		text-transform: uppercase
+  &__legend
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
 
-	&__label
-		margin-top: 18px
-		color: #000000
-		font-size: 14px
-		font-weight: 300
+  &__label
+    margin-top: 18px
+    color: #000000
+    font-size: 14px
+    font-weight: 300
 
-	&__input
-		margin-top: 24px
-		width: 355px
-		height: 45px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		color: #b1b1b1
-		font-size: 13px
-		font-weight: 300
-		padding-left: 18px
+  &__input
+    margin-top: 24px
+    width: 355px
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    padding-left: 18px
 
-	&__btn
-		margin-top: 25px
-		width: 118px
-		height: 35px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		cursor: pointer
-		color: #4a4a4a
-		font-size: 11px
-		font-weight: 700
-		text-transform: uppercase
+  &__btn
+    margin-top: 25px
+    width: 118px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    cursor: pointer
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
 
-	&__btn:hover
-		background-color: $pink
-		color: white
+  &__btn:hover
+    background-color: $pink
+    color: white
 
 .cart-total-price
-	flex-direction: column
-	padding: 42px
-	width: 360px
-	height: 214px
-	background-color: #f5f3f3
+  flex-direction: column
+  padding: 42px
+  width: 360px
+  height: 214px
+  background-color: #f5f3f3
 
-	&__p-up
-		color: #4a4a4a
-		font-size: 11px
-		font-weight: 400
-		text-transform: uppercase
-		text-align: right
+  &__p-up
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: right
 
-	.p-up__span
-		margin-left: 10px
+  .p-up__span
+    margin-left: 10px
 
-	&__p-bottom
-		margin-top: 14px
-		color: #222222
-		font-size: 16px
-		font-weight: 700
-		text-transform: uppercase
-		text-align: right
+  &__p-bottom
+    margin-top: 14px
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: right
 
-	.p-bottom__span
-		margin-left: 10px
-		color: $pink
+  .p-bottom__span
+    margin-left: 10px
+    color: $pink
 
-	&__hr
-		height: 1px
-		background-color: #e2e2e2
-		margin-top: 22px
+  &__hr
+    height: 1px
+    background-color: #e2e2e2
+    margin-top: 22px
 
-	&__btn
-		display: flex
-		justify-content: center
-		align-items: center
-		width: 273px
-		height: 50px
-		background-color: $pink
-		color: #ffffff
-		font-size: 16px
-		font-weight: 700
-		text-transform: uppercase
-		margin-top: 17px
-		box-shadow: 2px 2px 2px black
+  &__btn
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 273px
+    height: 50px
+    background-color: $pink
+    color: #ffffff
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 17px
+    box-shadow: 2px 2px 2px black
 
-	&__btn:hover
-		background-color: white
-		color: $pink
-		box-shadow: none
+  &__btn:hover
+    background-color: white
+    color: $pink
+    box-shadow: none
 
 .shop-details
-	flex-direction: column
-	padding: 89px 0
+  flex-direction: column
+  padding: 89px 0
 
-	&__blocks
-		color: #222222
-		font-size: 16px
-		font-weight: 700
-		text-transform: uppercase
-		cursor: pointer
-		padding: 28px 0
-		border-bottom: 1px solid #e8e8e8
+  &__blocks
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+    padding: 28px 0
+    border-bottom: 1px solid #e8e8e8
 
-	&__blocks:hover .shop-details__summary
-		color: $pink
-		transition: color 0.3s
+  &__blocks:hover .shop-details__summary
+    color: $pink
+    transition: color 0.3s
 
-	&__form
-		width: 50%
-		padding: 35px 0 0 35px
+  &__form
+    width: 50%
+    padding: 35px 0 0 35px
 
-	&__legend
-		color: #222222
-		font-size: 13px
-		font-weight: bold
-		text-transform: uppercase
+  &__legend
+    color: #222222
+    font-size: 13px
+    font-weight: bold
+    text-transform: uppercase
 
-	&__text
-		padding-top: 10px
-		color: #b3b2b2
-		font-size: 13px
-		font-weight: 400
-		line-height: 20px
-		text-transform: none
+  &__text
+    padding-top: 10px
+    color: #b3b2b2
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+    text-transform: none
 
-	&__text-up
-		margin-top: 10px
+  &__text-up
+    margin-top: 10px
 
-	&__radio
-		display: flex
-		align-items: center
-		color: #222222
-		font-size: 12px
-		font-weight: 700
-		margin: 20px 0
+  &__radio
+    display: flex
+    align-items: center
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    margin: 20px 0
 
-	&__radio-input
-		margin-right: 10px
-		cursor: pointer
+  &__radio-input
+    margin-right: 10px
+    cursor: pointer
 
-	&__fieldset
-		display: flex
-		flex-direction: column
+  &__fieldset
+    display: flex
+    flex-direction: column
 
-	&__btn
-		width: 180px
-		height: 50px
-		margin-top: 34px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		color: #4a4a4a
-		font-size: 14px
-		font-weight: 700
-		text-transform: uppercase
-		cursor: pointer
-		transition: all 0.5s
+  &__btn
+    width: 180px
+    height: 50px
+    margin-top: 34px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+    transition: all 0.5s
 
-	&__btn:hover
-		color: #ffffff
-		background-color: $pink
-		transform: scale(1.03)
-		border: none
+  &__btn:hover
+    color: #ffffff
+    background-color: $pink
+    transform: scale(1.03)
+    border: none
 
-	&__red-star
-		color: #ff0d0d
-		width: 6px
-		height: 6px
+  &__red-star
+    color: #ff0d0d
+    width: 6px
+    height: 6px
 
-	&__input-right
-		padding: 0 15px
-		width: 390px
-		height: 45px
-		margin-top: 16px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		font-size: 16px
+  &__input-right
+    padding: 0 15px
+    width: 390px
+    height: 45px
+    margin-top: 16px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    font-size: 16px
 
-	&__label-right
-		margin-top: 10px
-		color: #222222
-		font-size: 12px
-		font-weight: 700
-		line-height: 20px
+  &__label-right
+    margin-top: 10px
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    line-height: 20px
 
-	&__text-red
-		color: #ff0d0d
-		font-size: 13px
-		font-weight: 700
-		line-height: 20px
-		text-transform: none
-		margin-top: 10px
+  &__text-red
+    color: #ff0d0d
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+    text-transform: none
+    margin-top: 10px
 
-	&__btn-login
-		width: 180px
-		height: 50px
-		border: 1px solid #eaeaea
-		background-color: #ffffff
-		color: #4a4a4a
-		font-size: 14px
-		font-weight: 700
-		text-transform: uppercase
-		cursor: pointer
-		transition: all 0.5s
+  &__btn-login
+    width: 180px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+    transition: all 0.5s
 
+  &__btn-login:hover
+    color: #ffffff
+    background-color: $pink
+    transform: scale(1.03)
+    border: none
 
-	&__btn-login:hover
-		color: #ffffff
-		background-color: $pink
-		transform: scale(1.03)
-		border: none
+  &__a
+    color: #222222
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    margin-left: 32px
+    text-transform: none
 
-	&__a
-		color: #222222
-		font-size: 14px
-		font-weight: 700
-		line-height: 20px
-		margin-left: 32px
-		text-transform: none
+  &__a:hover
+    color: $pink
 
-	&__a:hover
-		color: $pink
-
-	&__btn-text
-		align-items: center
-		margin-top: 24px
+  &__btn-text
+    align-items: center
+    margin-top: 24px
 
 /*call-back block*/
 
 .call-back
-	position: fixed
-	bottom: 50px
-	left: 50px
+  position: fixed
+  bottom: 50px
+  left: 50px
 
-	&__round
-		width: 50px
-		height: 50px
-		background-color: $pink
-		justify-content: center
-		align-items: center
-		cursor: pointer
-		border: 1px solid $pink
-		border-radius: 25px 25px 25px 25px
-		box-shadow: 0 0 3px black
-		transition: transform 0.9s
-		animation: round 1s 1
+  &__round
+    width: 50px
+    height: 50px
+    background-color: $pink
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    border: 1px solid $pink
+    border-radius: 25px 25px 25px 25px
+    box-shadow: 0 0 3px black
+    transition: transform 0.9s
+    animation: round 1s 1
 
-	&__form
-		display: none
-		flex-direction: column
-		opacity: 0
-		transition: all 10s
-		animation: form 4s 1
-		animation-fill-mode: forwards
+  &__form
+    display: none
+    flex-direction: column
+    opacity: 0
+    transition: all 10s
+    animation: form 4s 1
+    animation-fill-mode: forwards
 
-	&__phone
-		color: #fff
-		animation: phone 1s infinite
+  &__phone
+    color: #fff
+    animation: phone 1s infinite
 
-	&__btn
-		width: 183px
-		height: 30px
-		margin-top: 15px
-		border: none
-		background-color: $pink
-		color: #fff
-		cursor: pointer
-		font-weight: bold
+  &__btn
+    width: 183px
+    height: 30px
+    margin-top: 15px
+    border: none
+    background-color: $pink
+    color: #fff
+    cursor: pointer
+    font-weight: bold
 
-	&__btn:hover
-		background-color: #fff
-		color: $pink
-		border: 1px solid $pink
+  &__btn:hover
+    background-color: #fff
+    color: $pink
+    border: 1px solid $pink
 
-	&__input
-		margin: 5px 0
-		padding: 0 5px
+  &__input
+    margin: 5px 0
+    padding: 0 5px
 
-	&__round:hover
-		animation: call-form 2s 1
-		animation-fill-mode: forwards
-		transition: height 5s
-		border-radius: 0
-		background-color: #fff
+  &__round:hover
+    animation: call-form 2s 1
+    animation-fill-mode: forwards
+    transition: height 5s
+    border-radius: 0
+    background-color: #fff
 
-	&__round:hover &__phone
-		display: none
+  &__round:hover &__phone
+    display: none
 
-	&__round:hover &__form
-		display: flex
-		opacity: 0.9
-		transition: opacity 10s
+  &__round:hover &__form
+    display: flex
+    opacity: 0.9
+    transition: opacity 10s
 
-	@keyframes phone
-		0%
-			transform: scale(1)
-		50%
-			transform: scale(1.3)
-		100%
-			transform: scale(1)
+  @keyframes phone
+    0%
+      transform: scale(1)
+    50%
+      transform: scale(1.3)
+    100%
+      transform: scale(1)
 
-	@keyframes call-form
-		0%
-			width: 50px
-		50%
-			width: 300px
-		100%
-			width: 300px
-			height: 200px
+  @keyframes call-form
+    0%
+      width: 50px
+    50%
+      width: 300px
+    100%
+      width: 300px
+      height: 200px
 
-	@keyframes round
-		0%
-			transform: rotate(-360deg)
-		100%
-			transform: rotate(0deg)
+  @keyframes round
+    0%
+      transform: rotate(-360deg)
+    100%
+      transform: rotate(0deg)
 
-	@keyframes form
-		0%
-			opacity: 0
-		100%
-			opacity: 1
-
+  @keyframes form
+    0%
+      opacity: 0
+    100%
+      opacity: 1
 
 @media screen and (max-width: 768px)
 
-	.categories
-		flex-direction: column
+  .categories
+    flex-direction: column
 
-		&__group-left
-			margin-right: 0
-			align-items: center
-		&__group-right
-			align-items: center
+    &__group-left
+      margin-right: 0
+      align-items: center
+    &__group-right
+      align-items: center
 
-	.reviews-and-form-bg
-		height: 100%
-		background: url("img/bg2.jpg") no-repeat top
+  .reviews-and-form-bg
+    height: 100%
+    background: url("img/bg2.jpg") no-repeat top
 
-	.reviews img
-		display: none
+  .reviews img
+    display: none
 
-	.footer-top
-		flex-direction: column
-		align-items: center
+  .footer-top
+    flex-direction: column
+    align-items: center
 
-	.about-company
-		width: 90%
-		justify-content: space-around
+  .about-company
+    width: 90%
+    justify-content: space-around
 
-	.company-list, .information-list, .categories-list
-		display: none
+  .company-list, .information-list, .categories-list
+    display: none
 
 @media screen and (max-width: 881px)
 
-	.cart-icon, .button-header-right
-		display: none
+  .cart-icon, .button-header-right
+    display: none
 
-	.hamburger__i
-		display: flex !important
-		cursor: pointer
+  .hamburger__i
+    display: flex !important
+    cursor: pointer
 
-	.search
-		display: none
+  .search
+    display: none
 
-	.banner__block-left
-		display: none
+  .banner__block-left
+    display: none
 
-	.banner
-		justify-content: center
-		margin-bottom: 0
+  .banner
+    justify-content: center
+    margin-bottom: 0
 
-	.copywright
-		padding-left: 30px
+  .copywright
+    padding-left: 30px
 
-	.social-block
-		padding-right: 30px
-		width: 220px
+  .social-block
+    padding-right: 30px
+    width: 220px
 
 @media screen and (max-width: 576px)
 
-	.menu
-		display: none
+  .menu
+    display: none
 
-	header
-		position: fixed
-		width: 100%
-		background-color: #fff
-		z-index: 1100
-		box-shadow: 0 0 4px rgba(0,0,0, 0.5)
+  header
+    position: fixed
+    width: 100%
+    background-color: #fff
+    z-index: 1100
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
 
-	.copywright
-		padding-left: 0
+  .copywright
+    padding-left: 0
 
-	.social-block
-		padding-right: 0
+  .social-block
+    padding-right: 0
 
-	.footer-bottom__wrapper
-		flex-direction: column
+  .footer-bottom__wrapper
+    flex-direction: column

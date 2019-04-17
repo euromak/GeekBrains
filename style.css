@@ -87,7 +87,11 @@ header {
   line-height: 32px; }
 
 .search-btn a span {
-  letter-spacing: 0.35px; }
+  letter-spacing: 0.35px;
+  background-color: #cdcdcc;
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  justify-content: center;
+  box-sizing: border-box; }
 
 .search-btn a i {
   width: 9px;
