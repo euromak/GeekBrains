@@ -44,17 +44,63 @@ var slider = {
         $slideNext.id = 'slider__next';
         $slideNext.innerHTML = '<i class="fa fa-chevron-right" aria-hidden="true"></i>';
         $slide.appendChild($slideNext);
+        $slideNext.addEventListener('click', next);
 
+        function next() {
+            if(event.target.id == 'slider__next'){
+                slider.next();
+
+            }
+        }
 
         let $slidePrev = $slideNext.cloneNode(true);
         $slide.appendChild($slidePrev);
         $slidePrev.id = 'slider__prev';
         $slidePrev.innerHTML = '<i class="fa fa-chevron-left" aria-hidden="true"></i>';
+        $slidePrev.addEventListener('click', prev);
+
+        function prev() {
+            if(event.target.id == 'slider__prev'){
+                slider.prev();
+                showCurrentSlide();
+            }
+        }
+
+        let $navigationPoints = document.createElement('div');
+        $slide.appendChild($navigationPoints);
+        $navigationPoints.classList.add('navPointsBlock');
+
+        for(let i = 0; i < slider.images.length; i++){
+            let $point = document.createElement('div');
+            $point.classList.add('navPoint');
+            $navigationPoints.appendChild($point);
+        }
+
+        function showCurrentSlide(){
+            for(let j = 0; j < slider.images.length; j++){
+                let $points = document.getElementsByClassName('navPoint')[j];
+                if(j == slider.currentSlide){
+                    $points.style.background = 'black';
+                    console.log(j);
+                }
+            }
+        }
+
+        showCurrentSlide();
 
         return true;
+    },
+    speed: function(){
+        setInterval(function(){slider.next();}, 5000);
     }
 
+};
+
+
+function init(){
+    slider.navigation();
+    slider.speed();
 }
 
-slider.navigation();
+window.addEventListener('load', init);
 
