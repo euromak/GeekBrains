@@ -295,7 +295,7 @@ header
 
 /*slider section*/
 
-#slider
+#slider-section
   background-color: #e8e8e8
 
 .slider
@@ -304,6 +304,45 @@ header
   margin: 0 auto
   justify-content: flex-start
   align-items: center
+
+#slider__next
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  right: 20px
+  width: 50px
+  height: 50px
+  border-radius: 50px
+  cursor: pointer
+  background: $pink
+  color: #fff
+
+#slider__next:hover
+  border: 3px solid $pink
+  color: $pink
+  background: #fff
+  transition: color .5s, background 0.5s
+
+
+#slider__prev
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  left: 20px
+  width: 50px
+  height: 50px
+  border-radius: 50px
+  cursor: pointer
+  background: $pink
+  color: #fff
+
+#slider__prev:hover
+  border: 3px solid $pink
+  color: $pink
+  background: #fff
+  transition: color .5s, background 0.5s
 
 .text
   width: 509px
