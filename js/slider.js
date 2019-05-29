@@ -1,11 +1,10 @@
 'use strict';
 
-var slider = {
+let slider = {
     currentSlide: 0,
     images: ['url(img/bg.jpg)', 'url(img/bg3.jpg)', 'url(img/bg4.jpg)'],
     next: function(){
         let $slide = document.getElementById('slider');
-
 
         for(let i = this.currentSlide; i < this.images.length; i++){
             if(this.currentSlide === this.images.length-1){
@@ -19,8 +18,6 @@ var slider = {
             console.log(slider.images[i]);
             break;
         }
-
-
 },
     prev: function(){
         let $slide = document.getElementById('slider');
@@ -49,7 +46,7 @@ var slider = {
         function next() {
             if(event.target.id == 'slider__next'){
                 slider.next();
-
+                showCurrentSlide();
             }
         }
 
@@ -79,9 +76,12 @@ var slider = {
         function showCurrentSlide(){
             for(let j = 0; j < slider.images.length; j++){
                 let $points = document.getElementsByClassName('navPoint')[j];
-                if(j == slider.currentSlide){
-                    $points.style.background = 'black';
+                if(j === slider.currentSlide){
+                    $points.classList.add('navPointActive');
                     console.log(j);
+                }
+                else{
+                    $points.classList.remove('navPointActive');
                 }
             }
         }
@@ -91,7 +91,7 @@ var slider = {
         return true;
     },
     speed: function(){
-        setInterval(function(){slider.next();}, 5000);
+        //setInterval(function(){slider.next();}, 5000);
     }
 
 };

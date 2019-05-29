@@ -334,6 +334,9 @@ header {
   background: white;
   border-radius: 50px; }
 
+.navPointActive {
+  background: black; }
+
 .text {
   width: 509px;
   height: 92px;
