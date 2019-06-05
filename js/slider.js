@@ -44,7 +44,7 @@ let slider = {
         $slideNext.addEventListener('click', next);
 
         function next() {
-            if(event.target.id == 'slider__next'){
+            if(event.target.id == 'slider__next' || event.target.className == 'fa fa-chevron-right'){
                 slider.next();
                 showCurrentSlide();
             }
@@ -57,7 +57,7 @@ let slider = {
         $slidePrev.addEventListener('click', prev);
 
         function prev() {
-            if(event.target.id == 'slider__prev'){
+            if(event.target.id == 'slider__prev' || event.target.className == 'fa fa-chevron-left'){
                 slider.prev();
                 showCurrentSlide();
             }
