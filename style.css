@@ -26,6 +26,10 @@ body div {
 fieldset {
   border: none; }
 
+/*app styles */
+.app {
+  display: block; }
+
 /*block styles */
 .container {
   max-width: 1140px;
