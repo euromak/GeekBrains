@@ -279,7 +279,7 @@ header {
 
 .slider {
   position: relative;
-  background: url("img/bg.jpg") no-repeat center;
+  background: url("../img/bg.jpg") no-repeat center;
   height: 665px;
   margin: 0 auto;
   justify-content: flex-start;
@@ -510,7 +510,7 @@ header {
   width: 767px;
   height: 529px;
   padding-top: 146px;
-  background: url("img/bg-banner.jpg");
+  background: url("../img/bg-banner.jpg");
   flex-direction: column; }
 
 .banner__block-left div {
@@ -579,7 +579,7 @@ header {
   justify-content: center;
   height: 438px;
   margin: 0 auto;
-  background: url("img/bg2.jpg") no-repeat center; }
+  background: url("../img/bg2.jpg") no-repeat center; }
 
 .reviews {
   flex: 1;
@@ -911,7 +911,7 @@ input:visited {
   width: 15px;
   height: 15px;
   border: 1px solid #ebebeb;
-  background: url(img/icons/check.svg) no-repeat center center; }
+  background: url(../img/icons/check.svg) no-repeat center center; }
 
 .range {
   -webkit-appearance: none;
@@ -1738,7 +1738,7 @@ input:visited {
 
   .reviews-and-form-bg {
     height: 100%;
-    background: url("img/bg2.jpg") no-repeat top; }
+    background: url("../img/bg2.jpg") no-repeat top; }
 
   .reviews img {
     display: none; }

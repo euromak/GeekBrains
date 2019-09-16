@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shopping cart</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Single page</title>
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="shortcut icon" type="image/png" href="img/logo.png">
 </head>
@@ -31,30 +31,30 @@
 					<a href="cart.html">
 						<img src="img/cart.svg" alt="cart icon">
 					</a>
-                    <div class="cart-icon__modal">
-                        <div class="cart-icon__items">
-                            <img src="img/products/cart/product25.jpg" alt="product">
-                            <div class="cart-icon__items-info">
-                                <div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">Rebox Zane</a></div>
-                                <div class="cart-icon__items-info-row cart-icon__rank"><img src="img/products/icons/stars.png" alt="rank"><i class="fa fa-times-circle cart-icon__close" aria-hidden="true"></i></div>
-                                <div class="cart-icon__items-info-row cart-icon__items-price">1  x   $250</div>
-                            </div>
-                        </div>
-                        <div class="cart-icon__items">
-                            <img src="img/products/cart/product67.jpg" alt="product">
-                            <div class="cart-icon__items-info">
-                                <div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">Rebox Zane</a></div>
-                                <div class="cart-icon__items-info-row cart-icon__rank"><img src="img/products/icons/stars.png" alt="rank"><i class="fa fa-times-circle cart-icon__close" aria-hidden="true"></i></div>
-                                <div class="cart-icon__items-info-row cart-icon__items-price">1  x   $250</div>
-                            </div>
-                        </div>
-                        <div class="cart-icon__price">
-                            <p>TOTAL</p>
-                            <p>$500.00</p>
-                        </div>
-                        <a href="checkout.html" class="cart-icon__btn cart-icon__btn-active">Checkout</a>
-                        <a href="cart.html" class="cart-icon__btn">Go to cart</a>
-                    </div>
+					<div class="cart-icon__modal">
+						<div class="cart-icon__items">
+							<img src="img/products/cart/product25.jpg" alt="product">
+							<div class="cart-icon__items-info">
+								<div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">Rebox Zane</a></div>
+								<div class="cart-icon__items-info-row cart-icon__rank"><img src="img/products/icons/stars.png" alt="rank"><i class="fa fa-times-circle cart-icon__close" aria-hidden="true"></i></div>
+								<div class="cart-icon__items-info-row cart-icon__items-price">1  x   $250</div>
+							</div>
+						</div>
+						<div class="cart-icon__items">
+							<img src="img/products/cart/product67.jpg" alt="product">
+							<div class="cart-icon__items-info">
+								<div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">Rebox Zane</a></div>
+								<div class="cart-icon__items-info-row cart-icon__rank"><img src="img/products/icons/stars.png" alt="rank"><i class="fa fa-times-circle cart-icon__close" aria-hidden="true"></i></div>
+								<div class="cart-icon__items-info-row cart-icon__items-price">1  x   $250</div>
+							</div>
+						</div>
+						<div class="cart-icon__price">
+							<p>TOTAL</p>
+							<p>$500.00</p>
+						</div>
+						<a href="checkout.html" class="cart-icon__btn cart-icon__btn-active">Checkout</a>
+						<a href="cart.html" class="cart-icon__btn">Go to cart</a>
+					</div>
 				</div>
 				<div class="button-header-right">
 					My Account<i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -170,120 +170,92 @@
 	</nav>
 	<section id="heading">
 		<div class="container heading">
-			<h1 class="heading-name">SHOPPING CART</h1>
+			<h1 class="heading-name">NEW ARRIVALS</h1>
 			<div class="breadcrums"><a href="index.html"> Home</a>/<a href="products.html">Men</a>/<a href="#" class="breadcrums-active-page"> New Arrivals</a></div>
 		</div>
 	</section>
-    <section id="cart">
-        <div class="cart container">
-            <div class="cart__row cart-heading">
-                <div class="cart__row__col-3">Product Details</div>
-                <div class="cart__row__col-1">unite Price</div>
-                <div class="cart__row__col-1">Quantity</div>
-                <div class="cart__row__col-1">shipping</div>
-                <div class="cart__row__col-1">Subtotal</div>
-                <div class="cart__row__col-1">ACTION</div>
-            </div>
-            <div class="cart__row cart__row-shadow">
-                <div class="cart__row__col-3">
-                    <img src="img/products/cart/product1.jpg" alt="product12">
-                    <div class="cart-product-text">
-						<h3 class="cart-product-text__h3"><a href="page.html" class="cart-product-a">Mango  People  T-shirt</a></h3>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Color:</span> Red</p>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Size:</span> Xll</p>
-                    </div>
-                </div>
-                <div class="cart__row__col-1 cart-item">$150</div>
-                <div class="cart__row__col-1 cart-item-input">
-                    <form action="">
-						<label for="cartItemNumber1"></label>
-                        <input type="text" placeholder="1" class="cart-item-number" id="cartItemNumber1">
-                    </form>
-                </div>
-                <div class="cart__row__col-1 cart-item">FREE</div>
-                <div class="cart__row__col-1 cart-item">$300</div>
-                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
-            </div>
-            <div class="cart__row cart__row-shadow">
-                <div class="cart__row__col-3">
-                    <img src="img/products/cart/product2.jpg" alt="product88">
-                    <div class="cart-product-text">
-						<h3 class="cart-product-text__h3"><a href="page.html" class="cart-product-a">Mango  People  T-shirt</a></h3>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Color:</span> Red</p>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Size:</span> Xll</p>
-                    </div>
-                </div>
-                <div class="cart__row__col-1 cart-item">$150</div>
-                <div class="cart__row__col-1 cart-item-input">
-                    <form action="">
-						<label for="cartItemNumber2"></label>
-                        <input type="text" placeholder="1" class="cart-item-number" id="cartItemNumber2">
-                    </form>
-                </div>
-                <div class="cart__row__col-1 cart-item">FREE</div>
-                <div class="cart__row__col-1 cart-item">$300</div>
-                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
-            </div>
-            <div class="cart__row cart__row-shadow">
-                <div class="cart__row__col-3">
-                    <img src="img/products/cart/product3.jpg" alt="product20">
-                    <div class="cart-product-text">
-						<h3 class="cart-product-text__h3"><a href="page.html" class="cart-product-a">Mango  People  T-shirt</a></h3>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Color:</span> Red</p>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Size:</span> Xll</p>
-                    </div>
-                </div>
-                <div class="cart__row__col-1 cart-item">$150</div>
-                <div class="cart__row__col-1 cart-item-input">
-                    <form action="">
-						<label for="cartItemNumber"></label>
-                        <input type="text" placeholder="1" class="cart-item-number" id="cartItemNumber">
-                    </form>
-                </div>
-                <div class="cart__row__col-1 cart-item">FREE</div>
-                <div class="cart__row__col-1 cart-item">$300</div>
-                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true"></i>
-</div>
-            </div>
-        </div>
-        <div class="cart-button container">
-            <div class="cart-button__left">CLEAR SHOPPING CART</div>
-            <div class="cart-button__right">CONTINUE SHOPPING</div>
-        </div>
-        <div class="cart-forms container">
-            <form action="">
-                <fieldset class="shipping-adress">
-                    <legend class="shipping-adress__legend">Shipping Adress</legend>
-					<label for="city"></label>
-					<select name="city" id="city" class="shipping-adress__input">
-                        <option value="bangladesh">Moscow</option>
-                        <option value="novgorod">Novgorod</option>
-                        <option value="omsk">Omsk</option>
-                        <option value="dmitrov">Dmitrov</option>
-                    </select>
-					<label for="shipping"></label>
-                    <input type="text" placeholder="State" class="shipping-adress__input" id="shipping">
-					<label for="shippingAdres"></label>
-                    <input type="text" placeholder="Postcode/Zip" class="shipping-adress__input" id="shippingAdres">
-                    <button class="shipping-adress__btn">get a quote</button>
-                </fieldset>
-            </form>
-            <form action="">
-                <fieldset class="coupon">
-                    <legend class="coupon__legend">coupon  discount</legend>
-                    <label for="couponInput" class="coupon__label">Enter your coupon code if you have one</label>
-                    <input type="text" placeholder="State" name="coupon-input" class="coupon__input" id="couponInput">
-                    <button class="coupon__btn">Apply coupon</button>
-                </fieldset>
-            </form>
-            <div class="cart-total-price">
-                <p class="cart-total-price__p-up">Sub total<span class="p-up__span">$900</span></p>
-                <p class="cart-total-price__p-bottom">GRAND TOTAL<span class="p-bottom__span">$900</span></p>
-                <div class="cart-total-price__hr"></div>
-                <a href="checkout.html" class="cart-total-price__btn">proceed to checkout</a>
-            </div>
-        </div>
-    </section>
+	<section id="product-info">
+		<div class="product-info">
+			<div class="product-info__foto">
+				<div class="video-wrap">
+					<video src="video.mp4" autoplay loop preload="auto" class="video" ></video>
+				</div>
+				<div class="product-info__foto__nav__left">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				</div>
+				<div class="product-info__foto__nav__right">
+					<i class="fa fa-chevron-right" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="product-info__description container">
+				<div class="product-category">WOMEN COLLECTION</div>
+				<div class="product-heading">Moschino Cheap And Chic</div>
+				<div class="product-description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </div>
+				<div class="product-param">
+					<div><span class="product-param__text">MATERIAL:</span> COTTON</div>
+					<div><span class="product-param__text">DESIGNER:</span> BINBURHAN</div>
+				</div>
+				<div class="product-price">$561</div>
+				<hr class="product-line">
+				<form action="" class="single-product-form">
+					<fieldset>
+						<label for="color">CHOOSE COLOR</label>
+						<select name="color" id="color">
+							<option value="red">Red</option>
+							<option value="green">Green</option>
+							<option value="blue">Blue</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="size">CHOOSE SIZE</label>
+						<select name="size" id="size">
+							<option value="xl">Xl</option>
+							<option value="l">L</option>
+							<option value="m">M</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<label for="quantity">QUANTITY</label>
+						<input type="number" name="quantity" id="quantity" min="0" max="10" value="1">
+					</fieldset>
+					<button class="single-product-form-btn"><img src="img/cart1.svg" alt="cart">Add to Cart</button>
+				</form>
+			</div>
+			<div class="product-info__related-products container">
+				<h2>you may like also</h2>
+				<div class="single-products-grid">
+					<div class="single-products-grid__item">
+						<a href="page.html">
+							<img src="img/products/related/related_01.jpg" class="single-products-grid__item-image" alt="related_product">
+							<div class="single-products-grid__item-name">BLAZE LEGGINGS</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
+					<div class="single-products-grid__item">
+						<a href="page.html">
+							<img src="img/products/related/related_02.jpg" class="single-products-grid__item-image" alt="related_product2">
+							<div class="single-products-grid__item-name">ALEXA SWEATER</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
+					<div class="single-products-grid__item">
+						<a href="page.html">
+							<img src="img/products/related/related_03.jpg" class="single-products-grid__item-image" alt="related_product3">
+							<div class="single-products-grid__item-name">AGNES TOP</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
+					<div class="single-products-grid__item">
+						<a href="page.html">
+							<img src="img/products/related/related_04.jpg" alt="related_product4" class="single-products-grid__item-image">
+							<div class="single-products-grid__item-name">SYLVA SWEATER</div>
+							<div class="single-products-grid__item-price">$52.00</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section id="reviews-and-form">
 		<div class="reviews-and-form-bg">
 			<div class="container review-and-form-container">
