@@ -16,7 +16,7 @@ Vue.component('catalog', {
     methods: {
         filter(value){
             let regexp = new RegExp(value, 'i');
-            this.filtered = this.products.filter(el => regexp.test(el.product_name));
+            this.filtred = this.products.filter(el => regexp.test(el.product_name));
         }
     },
     mounted(){

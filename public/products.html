@@ -21,11 +21,7 @@
 				</div>
 				<div class="search">
 					<div class="search-btn"><a href="#"><span>B</span>rowse<i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
-					<form action="" class="search-form">
-						<label for="search"></label>
-						<input type="text" name="search" placeholder="Search for item..." id="search">
-						<button><i class="fa fa-search" aria-hidden="true"></i></button>
-					</form>
+					<search ref="search"></search>
 				</div>
 			</div> 
 			<div class="header__right">
@@ -272,7 +268,7 @@
 				</form>
 			</div>
 			<div class="products-shop">
-				<catalog></catalog>
+				<catalog ref="products"></catalog>
 				<div class="products-grid-navigation">
 					<div class="pagination">
 						<a href=""><</a>
@@ -422,9 +418,9 @@
 			</form>
 		</div>
 	</div>
-	<catalog-products></catalog-products>
 </div>
 	<script src="js/ProductsComp.js"></script>
+    <script src="js/FilterComp.js"></script>
 	<script src="js/app.js"></script>
 </div>
 </body>
