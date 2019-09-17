@@ -42,7 +42,13 @@
     "image": "img/products/main/product7.jpg"
   },
   {
-    "id_product": 784,
+    "id_product": 875,
+    "product_name": "mango people t-shirt 8",
+    "price": 1000,
+    "image": "img/products/main/product8.jpg"
+  },
+  {
+    "id_product": 198,
     "product_name": "mango people t-shirt 8",
     "price": 1000,
     "image": "img/products/main/product8.jpg"

@@ -3,7 +3,6 @@
 const app = new Vue({
     el: '#app',
     data: {
-        productsDataURL: 'data.json',
         productsData: [],
     },
 

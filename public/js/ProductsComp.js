@@ -9,6 +9,7 @@ Vue.component('catalog', {
           products: [],
           filtred: [],
           imgCatalog: 'https://placehold.it/200x150',
+          productsCatalog: [],
       }
     },
 
@@ -29,6 +30,36 @@ Vue.component('catalog', {
     },
 
     template: `<div class="products-grid"><product v-for="item of filtred" :key="item.id_product" :img="imgCatalog" :product="item"></product></div>`,
+});
+
+Vue.component('catalog-products', {
+    props: ['data', 'img'],
+    data() {
+        return {
+            productsCatalog: [],
+            filtred: [],
+            imgCatalog: 'https://placehold.it/200x150',
+        }
+    },
+
+    methods: {
+        filter(value){
+            let regexp = new RegExp(value, 'i');
+            this.filtered = this.products.filter(el => regexp.test(el.product_name));
+        }
+    },
+    mounted(){
+        this.$parent.getJson('/api/products')
+            .then(data => {
+                for(let el of data){
+                    this.productsCatalog.push(el);
+                    this.productsCatalog.splice(8,1);
+                    this.filtred.push(el);
+                }
+            });
+    },
+
+    template: `<div class="products-grid"><product v-for="item of productsCatalog" :key="item.id_product" :img="imgCatalog" :product="item"></product></div>`,
 });
 
 Vue.component('product', {
