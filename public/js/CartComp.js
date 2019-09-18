@@ -12,7 +12,7 @@ Vue.component('cart', {
     },
 
     mounted(){
-        this.$parent.getJson('api/cart').then(data => {
+        this.$parent.getJson('/api/cart').then(data => {
             for (let el of data.contents) {
                 this.cartItems.push(el);
             }
