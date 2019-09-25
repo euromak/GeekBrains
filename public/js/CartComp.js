@@ -24,6 +24,7 @@ Vue.component('cart', {
             }
 
             this.totalPrice += product.price;
+            this.totalQuantity++;
         },
 
         remove(item) {
@@ -40,6 +41,7 @@ Vue.component('cart', {
             }
 
             this.totalPrice -= item.price;
+            this.totalQuantity--;
         },
     },
 

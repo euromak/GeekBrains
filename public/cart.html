@@ -8,8 +8,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="shortcut icon" type="image/png" href="img/logo.png">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
+<div id="app" class="app">
 	<header>
 		<div class="header container">	
 			<div class="header__left">
@@ -25,37 +27,9 @@
 						<button><i class="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
-			</div> 
+			</div>
 			<div class="header__right">
-				<div class="cart-icon">
-					<a href="cart.html">
-						<img src="img/cart.svg" alt="cart icon">
-					</a>
-                    <div class="cart-icon__modal">
-                        <div class="cart-icon__items">
-                            <img src="img/products/cart/product25.jpg" alt="product">
-                            <div class="cart-icon__items-info">
-                                <div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">Rebox Zane</a></div>
-                                <div class="cart-icon__items-info-row cart-icon__rank"><img src="img/products/icons/stars.png" alt="rank"><i class="fa fa-times-circle cart-icon__close" aria-hidden="true"></i></div>
-                                <div class="cart-icon__items-info-row cart-icon__items-price">1  x   $250</div>
-                            </div>
-                        </div>
-                        <div class="cart-icon__items">
-                            <img src="img/products/cart/product67.jpg" alt="product">
-                            <div class="cart-icon__items-info">
-                                <div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">Rebox Zane</a></div>
-                                <div class="cart-icon__items-info-row cart-icon__rank"><img src="img/products/icons/stars.png" alt="rank"><i class="fa fa-times-circle cart-icon__close" aria-hidden="true"></i></div>
-                                <div class="cart-icon__items-info-row cart-icon__items-price">1  x   $250</div>
-                            </div>
-                        </div>
-                        <div class="cart-icon__price">
-                            <p>TOTAL</p>
-                            <p>$500.00</p>
-                        </div>
-                        <a href="checkout.html" class="cart-icon__btn cart-icon__btn-active">Checkout</a>
-                        <a href="cart.html" class="cart-icon__btn">Go to cart</a>
-                    </div>
-				</div>
+				<cart ref="cart"></cart>
 				<div class="button-header-right">
 					My Account<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
@@ -175,77 +149,7 @@
 		</div>
 	</section>
     <section id="cart">
-        <div class="cart container">
-            <div class="cart__row cart-heading">
-                <div class="cart__row__col-3">Product Details</div>
-                <div class="cart__row__col-1">unite Price</div>
-                <div class="cart__row__col-1">Quantity</div>
-                <div class="cart__row__col-1">shipping</div>
-                <div class="cart__row__col-1">Subtotal</div>
-                <div class="cart__row__col-1">ACTION</div>
-            </div>
-            <div class="cart__row cart__row-shadow">
-                <div class="cart__row__col-3">
-                    <img src="img/products/cart/product1.jpg" alt="product12">
-                    <div class="cart-product-text">
-						<h3 class="cart-product-text__h3"><a href="page.html" class="cart-product-a">Mango  People  T-shirt</a></h3>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Color:</span> Red</p>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Size:</span> Xll</p>
-                    </div>
-                </div>
-                <div class="cart__row__col-1 cart-item">$150</div>
-                <div class="cart__row__col-1 cart-item-input">
-                    <form action="">
-						<label for="cartItemNumber1"></label>
-                        <input type="text" placeholder="1" class="cart-item-number" id="cartItemNumber1">
-                    </form>
-                </div>
-                <div class="cart__row__col-1 cart-item">FREE</div>
-                <div class="cart__row__col-1 cart-item">$300</div>
-                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
-            </div>
-            <div class="cart__row cart__row-shadow">
-                <div class="cart__row__col-3">
-                    <img src="img/products/cart/product2.jpg" alt="product88">
-                    <div class="cart-product-text">
-						<h3 class="cart-product-text__h3"><a href="page.html" class="cart-product-a">Mango  People  T-shirt</a></h3>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Color:</span> Red</p>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Size:</span> Xll</p>
-                    </div>
-                </div>
-                <div class="cart__row__col-1 cart-item">$150</div>
-                <div class="cart__row__col-1 cart-item-input">
-                    <form action="">
-						<label for="cartItemNumber2"></label>
-                        <input type="text" placeholder="1" class="cart-item-number" id="cartItemNumber2">
-                    </form>
-                </div>
-                <div class="cart__row__col-1 cart-item">FREE</div>
-                <div class="cart__row__col-1 cart-item">$300</div>
-                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
-            </div>
-            <div class="cart__row cart__row-shadow">
-                <div class="cart__row__col-3">
-                    <img src="img/products/cart/product3.jpg" alt="product20">
-                    <div class="cart-product-text">
-						<h3 class="cart-product-text__h3"><a href="page.html" class="cart-product-a">Mango  People  T-shirt</a></h3>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Color:</span> Red</p>
-                        <p class="cart-product-text__p"><span class="cart-product-text__p-bold">Size:</span> Xll</p>
-                    </div>
-                </div>
-                <div class="cart__row__col-1 cart-item">$150</div>
-                <div class="cart__row__col-1 cart-item-input">
-                    <form action="">
-						<label for="cartItemNumber"></label>
-                        <input type="text" placeholder="1" class="cart-item-number" id="cartItemNumber">
-                    </form>
-                </div>
-                <div class="cart__row__col-1 cart-item">FREE</div>
-                <div class="cart__row__col-1 cart-item">$300</div>
-                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true"></i>
-</div>
-            </div>
-        </div>
+		<checkout-cart ref="checkout"></checkout-cart>
         <div class="cart-button container">
             <div class="cart-button__left">CLEAR SHOPPING CART</div>
             <div class="cart-button__right">CONTINUE SHOPPING</div>
@@ -385,6 +289,12 @@
 			</form>
 		</div>
 	</div>
+</div>
+	<script src="js/ProductsComp.js"></script>
+	<script src="js/CheckoutComp.js"></script>
+	<script src="js/CartComp.js"></script>
+	<script src="js/FilterComp.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
 
