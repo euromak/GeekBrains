@@ -3,7 +3,8 @@ Vue.component('cart', {
       return {
           cartItems: [],
           showCart: false,
-
+          totalPrice: 0,
+          totalQuantity: 0,
       }
     },
 
@@ -15,13 +16,14 @@ Vue.component('cart', {
                 find.quantity++;
             } else {
                 let prod = Object.assign({quantity: 1}, product);
-                this.$parent.postJson('/api/cart', prod)
-                    .then(data => {
+                this.$parent.postJson('/api/cart', prod).then(data => {
                         if (data.result === 1) {
                             this.cartItems.push(prod);
                         }
-                    });
+                });
             }
+
+            this.totalPrice += product.price;
         },
 
         remove(item) {
@@ -34,12 +36,10 @@ Vue.component('cart', {
                     });
             } else {
                 this.$parent.deleteJson(`/api/cart/${item.id_product}`)
-                    .then(data => {
-                        if (data.result === 1) {
-                            this.cartItems.splice(this.cartItems.indexOf(item), 1);
-                        }
-                    });
+                    .then(data => {if (data.result === 1) this.cartItems.splice(this.cartItems.indexOf(item), 1);});
             }
+
+            this.totalPrice -= item.price;
         },
     },
 
@@ -48,6 +48,7 @@ Vue.component('cart', {
             for (let el of data.contents) {
                 this.cartItems.push(el);
             }
+            this.totalPrice = data.amount;
         })
     },
 
@@ -58,13 +59,12 @@ Vue.component('cart', {
                     <cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item" @remove="remove"></cart-item>
                     <div class="cart-icon__price">
 							<p>TOTAL</p>
-							<p>$500.00</p>
+							<p>{{totalPrice}}$</p>
 						</div>
 						<a href="checkout.html" class="cart-icon__btn cart-icon__btn-active">Checkout</a>
 						<a href="cart.html" class="cart-icon__btn">Go to cart</a>
                     </div>
-				</div>
-`,
+				</div>`,
 });
 
 Vue.component('cart-item', {
