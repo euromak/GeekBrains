@@ -8,7 +8,21 @@ Vue.component('cart', {
     },
 
     methods: {
-
+        addProduct(product){
+            let find = this.cartItems.find(el => el.id_product === product.id_product);
+            if(find){
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1});
+                find.quantity++;
+            } else {
+                let prod = Object.assign({quantity: 1}, product);
+                this.$parent.postJson('/api/cart', prod)
+                    .then(data => {
+                        if (data.result === 1) {
+                            this.cartItems.push(prod);
+                        }
+                    });
+            }
+        },
     },
 
     mounted(){
@@ -19,7 +33,7 @@ Vue.component('cart', {
         })
     },
 
-    template: `<div class="cart-icon__modal"><cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item" :img="imgCart"></cart-item></div>`,
+    template: `<div class="cart-icon__modal"><cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item"></cart-item></div>`,
 });
 
 Vue.component('cart-item', {
