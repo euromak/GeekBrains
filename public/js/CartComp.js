@@ -23,6 +23,24 @@ Vue.component('cart', {
                     });
             }
         },
+
+        remove(item) {
+            if (item.quantity > 1) {
+                this.$parent.putJson(`/api/cart/${item.id_product}`, {quantity: -1})
+                    .then(data => {
+                        if (data.result === 1) {
+                            item.quantity--;
+                        }
+                    });
+            } else {
+                this.$parent.deleteJson(`/api/cart/${item.id_product}`)
+                    .then(data => {
+                        if (data.result === 1) {
+                            this.cartItems.splice(this.cartItems.indexOf(item), 1);
+                        }
+                    });
+            }
+        },
     },
 
     mounted(){
@@ -33,7 +51,13 @@ Vue.component('cart', {
         })
     },
 
-    template: `<div class="cart-icon__modal"><cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item"></cart-item></div>`,
+    template: `<div class="cart-icon">
+					<img src="img/cart.svg" alt="cart icon" @click="showCart = !showCart">
+                    <div class="cart-icon__modal" v-show="showCart">
+                    <p v-if="!cartItems.length" class="cart-attention">Корзина пуста</p>
+                    <cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item" @remove="remove"></cart-item></div>
+				</div>
+`,
 });
 
 Vue.component('cart-item', {
@@ -41,9 +65,12 @@ Vue.component('cart-item', {
    template: `<div class="cart-icon__items">
                 <img src="img/products/cart/product25.jpg" alt="product">
                 <div class="cart-icon__items-info">
-                    <div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">Rebox Zane</a></div>
-                    <div class="cart-icon__items-info-row cart-icon__rank"><img src="img/products/icons/stars.png" alt="rank"><i class="fa fa-times-circle cart-icon__close" aria-hidden="true"></i></div>
-                    <div class="cart-icon__items-info-row cart-icon__items-price">1  x   $250</div>
+                    <div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">{{cartItem.product_name}}</a></div>
+                    <div class="cart-icon__items-info-row cart-icon__rank">
+                    <img src="img/products/icons/stars.png" alt="rank">
+                    <i class="fa fa-times-circle cart-icon__close" aria-hidden="true" @click="$emit('remove', cartItem)"></i>
+                    </div>
+                    <div class="cart-icon__items-info-row cart-icon__items-price">{{cartItem.quantity}} x {{cartItem.price}}$</div>
                 </div>
              </div>`,
 });

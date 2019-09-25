@@ -133,10 +133,10 @@ header {
 .cart-icon {
   width: 32px;
   height: 29px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .cart-icon__modal {
     position: absolute;
-    display: none;
     flex-direction: column;
     justify-content: center;
     width: 262px;
@@ -213,6 +213,9 @@ header {
   .cart-icon__btn-active:hover {
     color: #ffffff;
     background-color: #f16d7f; }
+
+.cart-attention {
+  text-align: center; }
 
 .button-header-right {
   width: 130px;
