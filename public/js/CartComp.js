@@ -59,7 +59,7 @@ Vue.component('cart', {
                     <cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item" @remove="remove"></cart-item>
                     <div class="cart-icon__price">
 							<p>TOTAL</p>
-							<p>{{totalPrice}}$</p>
+							<p>{{totalPrice}} $</p>
 						</div>
 						<a href="checkout.html" class="cart-icon__btn cart-icon__btn-active">Checkout</a>
 						<a href="cart.html" class="cart-icon__btn">Go to cart</a>
@@ -77,7 +77,7 @@ Vue.component('cart-item', {
                     <img src="img/products/icons/stars.png" alt="rank">
                     <i class="fa fa-times-circle cart-icon__close" aria-hidden="true" @click="$emit('remove', cartItem)"></i>
                     </div>
-                    <div class="cart-icon__items-info-row cart-icon__items-price">{{cartItem.quantity}} x {{cartItem.price}}$</div>
+                    <div class="cart-icon__items-info-row cart-icon__items-price">{{cartItem.quantity}} x {{cartItem.price}} $</div>
                 </div>
              </div>`,
 });
