@@ -55,7 +55,14 @@ Vue.component('cart', {
 					<img src="img/cart.svg" alt="cart icon" @click="showCart = !showCart">
                     <div class="cart-icon__modal" v-show="showCart">
                     <p v-if="!cartItems.length" class="cart-attention">Корзина пуста</p>
-                    <cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item" @remove="remove"></cart-item></div>
+                    <cart-item v-for="item of cartItems" :key="item.id_product" :cart-item="item" @remove="remove"></cart-item>
+                    <div class="cart-icon__price">
+							<p>TOTAL</p>
+							<p>$500.00</p>
+						</div>
+						<a href="checkout.html" class="cart-icon__btn cart-icon__btn-active">Checkout</a>
+						<a href="cart.html" class="cart-icon__btn">Go to cart</a>
+                    </div>
 				</div>
 `,
 });
@@ -63,7 +70,7 @@ Vue.component('cart', {
 Vue.component('cart-item', {
    props: ['cartItem', 'img'],
    template: `<div class="cart-icon__items">
-                <img src="img/products/cart/product25.jpg" alt="product">
+                <img :src="cartItem.image" class="cart-image" alt="product">
                 <div class="cart-icon__items-info">
                     <div class="cart-icon__items-info-row cart-icon__items-name"><a href="page.html" class="cart-icon__items-a">{{cartItem.product_name}}</a></div>
                     <div class="cart-icon__items-info-row cart-icon__rank">

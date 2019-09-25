@@ -73,8 +73,7 @@ Vue.component('product', {
                  <div class="product-name">{{product.product_name}}</div>
                  <div class="price">$ {{product.price}}</div>
             </a>
-            <a href="#" class="product-hover-block" @click="$root.$refs.cart.addProduct(product)">
-            <img src="img/cart-white.svg" alt="cart" class="product-icon-cart">Add to Cart</a>
+            <div class="product-hover-block" @click="$root.$refs.cart.addProduct(product)">КУПИТЬ</div>
         </div>    
     `,
 });
