@@ -1,7 +1,7 @@
 Vue.component('checkoutCart', {
     data(){
         return {
-            cartData: [],
+            cartData: this.$root.$refs.cart.cartItems,
         }
     },
 
@@ -10,11 +10,6 @@ Vue.component('checkoutCart', {
     },
 
     mounted() {
-        this.$parent.getJson('/api/cart').then(data => {
-            for(let product of data.contents){
-                this.cartData.push(product);
-            }
-        }).catch(error => console.log(error));
     },
 
     template: `        <div class="cart container">
