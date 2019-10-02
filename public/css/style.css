@@ -1333,7 +1333,7 @@ input:visited {
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 10px 0 38px; }
+    padding: 10px 0 10px; }
   .cart-product-text__p {
     color: #6f6e6e;
     font-size: 13px;
@@ -1411,9 +1411,19 @@ input:visited {
   font-weight: 700;
   text-transform: uppercase; }
 
-.cart-button__right:hover {
-  background-color: #f16d7f;
+.cart-button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #4a4a4a; }
+
+.cart-button-link:hover {
   color: white; }
+
+.cart-button__right:hover {
+  background-color: #f16d7f; }
 
 .cart-button__left:hover {
   background-color: #f16d7f;
