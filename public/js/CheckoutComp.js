@@ -6,7 +6,23 @@ Vue.component('checkoutCart', {
     },
 
     methods: {
+        remove(item) {
+            if (item.quantity > 1) {
+                this.$parent.putJson(`/api/cart/${item.id_product}`, {quantity: -1})
+                    .then(data => {
+                        if (data.result === 1) {
+                            item.quantity--;
+                        }
+                    });
+            } else {
+                this.$parent.deleteJson(`/api/cart/${item.id_product}`)
+                    .then(data => {if (data.result === 1) this.$root.$refs.cart.cartItems
+                        .splice(this.$root.$refs.cart.cartItems.indexOf(item), 1);});
+            }
 
+            this.totalPrice -= item.price;
+            this.totalQuantity--;
+        },
     },
 
     mounted() {
@@ -21,7 +37,7 @@ Vue.component('checkoutCart', {
                 <div class="cart__row__col-1">Subtotal</div>
                 <div class="cart__row__col-1">ACTION</div>
             </div>
-            <checkout-cart-item v-for="product of cartData" :key="product.id_product" :product="product"></checkout-cart-item>
+            <checkout-cart-item v-for="product of cartData" :key="product.id_product" :product="product" @remove="remove"></checkout-cart-item>
         </div>`,
 });
 
@@ -46,6 +62,6 @@ Vue.component('checkoutCartItem', {
                 </div>
                 <div class="cart__row__col-1 cart-item">FREE</div>
                 <div class="cart__row__col-1 cart-item">{{product.price * product.quantity}}</div>
-                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+                <div class="cart__row__col-1 cart-item"><i class="fa fa-times-circle" aria-hidden="true" @click="$emit('remove', product)"></i></div>
             </div>`,
 });
