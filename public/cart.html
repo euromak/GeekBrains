@@ -148,46 +148,7 @@
 			<div class="breadcrums"><a href="index.html"> Home</a>/<a href="products.html">Men</a>/<a href="#" class="breadcrums-active-page"> New Arrivals</a></div>
 		</div>
 	</section>
-    <section id="cart">
-		<checkout-cart ref="checkout"></checkout-cart>
-        <div class="cart-button container">
-            <div class="cart-button__left">CLEAR SHOPPING CART</div>
-			<div class="cart-button__right"><a href="products.html" class="cart-button-link">CONTINUE SHOPPING</a></div>
-        </div>
-        <div class="cart-forms container">
-            <form action="">
-                <fieldset class="shipping-adress">
-                    <legend class="shipping-adress__legend">Shipping Adress</legend>
-					<label for="city"></label>
-					<select name="city" id="city" class="shipping-adress__input">
-                        <option value="bangladesh">Moscow</option>
-                        <option value="novgorod">Novgorod</option>
-                        <option value="omsk">Omsk</option>
-                        <option value="dmitrov">Dmitrov</option>
-                    </select>
-					<label for="shipping"></label>
-                    <input type="text" placeholder="State" class="shipping-adress__input" id="shipping">
-					<label for="shippingAdres"></label>
-                    <input type="text" placeholder="Postcode/Zip" class="shipping-adress__input" id="shippingAdres">
-                    <button class="shipping-adress__btn">get a quote</button>
-                </fieldset>
-            </form>
-            <form action="">
-                <fieldset class="coupon">
-                    <legend class="coupon__legend">coupon  discount</legend>
-                    <label for="couponInput" class="coupon__label">Enter your coupon code if you have one</label>
-                    <input type="text" placeholder="State" name="coupon-input" class="coupon__input" id="couponInput">
-                    <button class="coupon__btn">Apply coupon</button>
-                </fieldset>
-            </form>
-            <div class="cart-total-price">
-                <p class="cart-total-price__p-up">Sub total<span class="p-up__span">$900</span></p>
-                <p class="cart-total-price__p-bottom">GRAND TOTAL<span class="p-bottom__span">$900</span></p>
-                <div class="cart-total-price__hr"></div>
-                <a href="checkout.html" class="cart-total-price__btn">proceed to checkout</a>
-            </div>
-        </div>
-    </section>
+	<checkout-cart ref="checkout"></checkout-cart>
 	<section id="reviews-and-form">
 		<div class="reviews-and-form-bg">
 			<div class="container review-and-form-container">
