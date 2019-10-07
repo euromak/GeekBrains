@@ -2,6 +2,9 @@ Vue.component('checkoutCart', {
     data(){
         return {
             cartData: this.$root.$refs.cart.cartItems,
+            showEmptyItemsText: true,
+            totalPrice: 0,
+            totalQuantity: 0,
         }
     },
 
@@ -20,18 +23,46 @@ Vue.component('checkoutCart', {
                         .splice(this.$root.$refs.cart.cartItems.indexOf(item), 1);});
             }
 
-            this.totalPrice -= item.price;
-            this.totalQuantity--;
+            this.$root.$refs.cart.totalPrice -= item.price;
+            this.$root.$refs.cart.totalQuantity--;
+        },
+
+        clean() {
+          this.$parent.deleteJson('/api/cart/0', {quantity: 0}).then(data => {
+              if(data.result === 1) {
+                  let a = document.querySelectorAll('.cart__row');
+                  a.forEach((item) => {
+                     item.remove();
+                  });
+                  this.$root.$refs.cart.cartItems.length = 0;
+                  this.$root.$refs.cart.totalPrice = 0;
+                  this.$root.$refs.cart.totalQuantity = 0;
+                  this.showEmptyItemsText = true;
+              }
+
+          })
         },
     },
 
-    mounted() {
+    mounted(){
+        this.$parent.getJson('/api/cart').then(data => {
+            this.totalPrice = data.amount;
+            this.totalQuantity = data.countGoods;
+        })
+    },
+
+    updated() {
+        if(this.$root.$refs.cart.cartItems.length > 0) {
+            this.showEmptyItemsText = false;
+        } else {
+            this.showEmptyItemsText = true;
+        }
     },
 
     template: `
     <section id="cart">
         <div class="cart container">
-            <div class="cart__row cart-heading">
+            <div class="cart-heading">
                 <div class="cart__row__col-3">Product Details</div>
                 <div class="cart__row__col-1">unite Price</div>
                 <div class="cart__row__col-1">Quantity</div>
@@ -39,10 +70,11 @@ Vue.component('checkoutCart', {
                 <div class="cart__row__col-1">Subtotal</div>
                 <div class="cart__row__col-1">ACTION</div>
             </div>
-            <checkout-cart-item v-for="product of cartData" :key="product.id_product" :product="product" @remove="remove"></checkout-cart-item>
+            <div v-if="showEmptyItemsText" class="cart-empty-text">В ВАШЕЙ КОРЗИНЕ НЕТ ТОВАРОВ</div>
+        <checkout-cart-item v-if="cartData" v-for="product of cartData" :key="product.id_product" :product="product" @remove="remove"></checkout-cart-item>
         </div>
         <div class="cart-button container">
-            <div class="cart-button__left">CLEAR SHOPPING CART</div>
+            <div class="cart-button__left" @click="clean">CLEAR SHOPPING CART</div>
 			<div class="cart-button__right"><a href="products.html" class="cart-button-link">CONTINUE SHOPPING</a></div>
         </div>
         <div class="cart-forms container">
@@ -72,8 +104,10 @@ Vue.component('checkoutCart', {
                 </fieldset>
             </form>
             <div class="cart-total-price">
-                <p class="cart-total-price__p-up">Sub total<span class="p-up__span">$900</span></p>
-                <p class="cart-total-price__p-bottom">GRAND TOTAL<span class="p-bottom__span">$900</span></p>
+                <p class="cart-total-price__p-up">Total quantity:<span class="p-up__span">
+                {{this.$root.$refs.cart.totalQuantity}}</span></p>
+                <p class="cart-total-price__p-bottom">GRAND TOTAL:<span class="p-bottom__span">
+                {{this.$root.$refs.cart.totalPrice}} $</span></p>
                 <div class="cart-total-price__hr"></div>
                 <a href="checkout.html" class="cart-total-price__btn">proceed to checkout</a>
             </div>
@@ -85,7 +119,7 @@ Vue.component('checkoutCart', {
 Vue.component('checkoutCartItem', {
     props: ['product'],
 
-    template: `<div class="cart__row cart__row-shadow">
+    template: `<div class="cart__row">
                 <div class="cart__row__col-3">
                     <img :src="product.image" alt="product12" class="cart-image">
                     <div class="cart-product-text">

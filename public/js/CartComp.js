@@ -51,6 +51,7 @@ Vue.component('cart', {
                 this.cartItems.push(el);
             }
             this.totalPrice = data.amount;
+            this.totalQuantity = data.countGoods;
         })
     },
 
