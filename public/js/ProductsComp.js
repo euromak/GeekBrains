@@ -10,6 +10,7 @@ Vue.component('catalog', {
           filtred: [],
           imgCatalog: 'https://placehold.it/200x150',
           productsCatalog: [],
+          currentProductLink: [],
       }
     },
 
@@ -63,10 +64,15 @@ Vue.component('catalog-products', {
 });
 
 Vue.component('product', {
-   props: ['product', 'img'],
+    props: ['product', 'img'],
+    methods: {
+        translateProduct(product) {
+            localStorage.setItem('product', JSON.stringify(product));
+        }
+    },
     template: `
         <div class="products-grid-items">
-            <a href="page.html">
+            <a href="page.html" target="blank" @click="translateProduct(product)">
                 <div class="img-wrap">
                     <img :src="product.image" class="product-image">
                  </div>
