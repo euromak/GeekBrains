@@ -5,9 +5,30 @@ Vue.component('productInfo', {
        }
    },
 
-    mounted(){
+    methods: {
+        addProduct(product){
+            console.log(product);
+            let find = this.$root.$refs.cart.cartItems.find(el => el.id_product === product.id_product);
+            if(find){
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1});
+                find.quantity++;
+            } else {
+                let prod = Object.assign({quantity: 1}, product);
+                this.$parent.postJson('/api/cart', prod).then(data => {
+                    if (data.result === 1) {
+                        this.$root.$refs.cart.cartItems.push(prod);
+                    }
+                });
+            }
+
+            this.$root.$refs.cart.totalPrice += product.price;
+            this.$root.$refs.cart.totalQuantity++;
+        },
+    },
+
+    created(){
        this.product.push(JSON.parse(localStorage.getItem('product')));
-       localStorage.clear();
+       //localStorage.clear();
     },
 
    template: `
@@ -25,15 +46,15 @@ Vue.component('productInfo', {
 			</div>
 			<div class="product-info__description container">
 				<div class="product-category">WOMEN COLLECTION</div>
-				<div class="product-heading">{{product[0].product_name}}</div>
+				<div class="product-heading">{{product[product.length-1].product_name}}</div>
 				<div class="product-description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </div>
 				<div class="product-param">
 					<div><span class="product-param__text">MATERIAL:</span> COTTON</div>
 					<div><span class="product-param__text">DESIGNER:</span> BINBURHAN</div>
 				</div>
-				<div class="product-price">{{product[0].price}} $</div>
+				<div class="product-price">{{product[product.length-1].price}} $</div>
 				<hr class="product-line">
-				<form action="" class="single-product-form">
+				<form action="#" class="single-product-form">
 					<fieldset>
 						<label for="color">CHOOSE COLOR</label>
 						<select name="color" id="color">
@@ -54,7 +75,7 @@ Vue.component('productInfo', {
 						<label for="quantity">QUANTITY</label>
 						<input type="number" name="quantity" id="quantity" min="0" max="10" value="1">
 					</fieldset>
-					<button class="single-product-form-btn"><img src="img/cart1.svg" alt="cart">Add to Cart</button>
+					<button class="single-product-form-btn" @click.prevent="addProduct(product[0])"><img src="img/cart1.svg" alt="cart">Add to Cart</button>
 				</form>
 			</div>
 			<div class="product-info__related-products container">
